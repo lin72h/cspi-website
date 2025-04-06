@@ -42,21 +42,23 @@ const Header = () => {
       >
         <div className="relative mx-auto max-w-c-1390 items-center justify-between px-4 md:px-8 xl:flex 2xl:px-0">
           <div className="flex w-full items-center justify-between xl:w-1/4">
-            <a href="/">
-              <Image
-                src="/images/logo/logo-transparent.png"
-                alt="logo"
-                width={180}
-                height={45}
-                className="hidden w-full dark:block"
-              />
-              <Image
-                src="/images/logo/logo-transparent.png"
-                alt="logo"
-                width={180}
-                height={45}
-                className="w-full dark:hidden"
-              />
+            <a href="/" className="flex items-center">
+              <div className="h-16 w-auto sm:h-20 md:h-20">
+                <Image
+                  src="/images/logo/logo-transparent.png"
+                  alt="logo"
+                  width={220}
+                  height={56}
+                  className="hidden h-full w-auto dark:block"
+                />
+                <Image
+                  src="/images/logo/logo-transparent.png"
+                  alt="logo"
+                  width={220}
+                  height={56}
+                  className="h-full w-auto dark:hidden"
+                />
+              </div>
             </a>
 
             <button
