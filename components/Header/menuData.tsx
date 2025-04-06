@@ -32,6 +32,30 @@ const menuData: Menu[] = [
     submenu: [
       {
         id: 31,
+        title: "Services",
+        newTab: false,
+        path: "/pricing",
+      },
+      {
+        id: 32,
+        title: "Testimonials",
+        newTab: false,
+        path: "/testimonials",
+      },
+      {
+        id: 33,
+        title: "FAQ",
+        newTab: false,
+        path: "/faq",
+      },
+      {
+        id: 35.1,
+        title: "Contact Us",
+        newTab: false,
+        path: "/support",
+      },
+      {
+        id: 31.5,
         title: "Blog Grid",
         newTab: false,
         path: "/blog",
@@ -49,16 +73,10 @@ const menuData: Menu[] = [
         path: "/auth/signup",
       },
       {
-        id: 35,
+        id: 35.2,
         title: "Docs",
         newTab: false,
         path: "/docs",
-      },
-      {
-        id: 35.1,
-        title: "Support",
-        newTab: false,
-        path: "/support",
       },
       {
         id: 36,
