@@ -61,43 +61,53 @@ const Header = () => {
               </div>
             </a>
 
-            <button
-              onClick={() => setNavigationOpen(!navigationOpen)}
-              aria-label="button for menu toggle"
-              className="block xl:hidden"
-            >
-              <span className="relative block h-5.5 w-5.5 cursor-pointer">
-                <span className="du-block absolute right-0 h-full w-full">
-                  <span
-                    className={`relative left-0 top-0 my-1 block h-0.5 w-0 rounded-sm bg-black delay-[0] duration-200 ease-in-out dark:bg-white ${
-                      !navigationOpen && "!w-full delay-300"
-                    }`}
-                  ></span>
-                  <span
-                    className={`relative left-0 top-0 my-1 block h-0.5 w-0 rounded-sm bg-black delay-150 duration-200 ease-in-out dark:bg-white ${
-                      !navigationOpen && "delay-400 !w-full"
-                    }`}
-                  ></span>
-                  <span
-                    className={`relative left-0 top-0 my-1 block h-0.5 w-0 rounded-sm bg-black delay-200 duration-200 ease-in-out dark:bg-white ${
-                      !navigationOpen && "!w-full delay-500"
-                    }`}
-                  ></span>
+            <div className="flex items-center gap-3 xl:hidden">
+              {!session && (
+                <Link
+                  href="/support"
+                  className="flex items-center justify-center rounded-full bg-cspi px-4 py-2 text-sm text-white duration-300 ease-in-out hover:bg-cspiHover"
+                >
+                  Contact Us
+                </Link>
+              )}
+              <button
+                onClick={() => setNavigationOpen(!navigationOpen)}
+                aria-label="button for menu toggle"
+                className="block xl:hidden"
+              >
+                <span className="relative block h-5.5 w-5.5 cursor-pointer">
+                  <span className="du-block absolute right-0 h-full w-full">
+                    <span
+                      className={`relative left-0 top-0 my-1 block h-0.5 w-0 rounded-sm bg-black delay-[0] duration-200 ease-in-out dark:bg-white ${
+                        !navigationOpen && "!w-full delay-300"
+                      }`}
+                    ></span>
+                    <span
+                      className={`relative left-0 top-0 my-1 block h-0.5 w-0 rounded-sm bg-black delay-150 duration-200 ease-in-out dark:bg-white ${
+                        !navigationOpen && "delay-400 !w-full"
+                      }`}
+                    ></span>
+                    <span
+                      className={`relative left-0 top-0 my-1 block h-0.5 w-0 rounded-sm bg-black delay-200 duration-200 ease-in-out dark:bg-white ${
+                        !navigationOpen && "!w-full delay-500"
+                      }`}
+                    ></span>
+                  </span>
+                  <span className="du-block absolute right-0 h-full w-full rotate-45">
+                    <span
+                      className={`absolute left-2.5 top-0 block h-full w-0.5 rounded-sm bg-black delay-300 duration-200 ease-in-out dark:bg-white ${
+                        !navigationOpen && "!h-0 delay-[0]"
+                      }`}
+                    ></span>
+                    <span
+                      className={`delay-400 absolute left-0 top-2.5 block h-0.5 w-full rounded-sm bg-black duration-200 ease-in-out dark:bg-white ${
+                        !navigationOpen && "dealy-200 !h-0"
+                      }`}
+                    ></span>
+                  </span>
                 </span>
-                <span className="du-block absolute right-0 h-full w-full rotate-45">
-                  <span
-                    className={`absolute left-2.5 top-0 block h-full w-0.5 rounded-sm bg-black delay-300 duration-200 ease-in-out dark:bg-white ${
-                      !navigationOpen && "!h-0 delay-[0]"
-                    }`}
-                  ></span>
-                  <span
-                    className={`delay-400 absolute left-0 top-2.5 block h-0.5 w-full rounded-sm bg-black duration-200 ease-in-out dark:bg-white ${
-                      !navigationOpen && "dealy-200 !h-0"
-                    }`}
-                  ></span>
-                </span>
-              </span>
-            </button>
+              </button>
+            </div>
           </div>
 
           {/* Nav Menu Start   */}
@@ -207,7 +217,7 @@ const Header = () => {
                 <>
                   <Link
                     href="/support"
-                    className="flex items-center justify-center rounded-full bg-cspi px-7.5 py-2.5 text-regular text-white duration-300 ease-in-out hover:bg-cspiHover"
+                    className="hidden xl:flex items-center justify-center rounded-full bg-cspi px-7.5 py-2.5 text-regular text-white duration-300 ease-in-out hover:bg-cspiHover"
                   >
                     Contact Us
                   </Link>
