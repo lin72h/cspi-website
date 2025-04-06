@@ -9,30 +9,29 @@ const Hero = () => {
           <div className="flex lg:items-center lg:gap-8 xl:gap-32.5">
             <div className=" md:w-1/2">
               <h4 className="mb-4.5 text-lg font-medium text-black dark:text-white">
-                🔥 Solid - A Complete SaaS Starter Template for SaaS
+                ✓ Professional Chartered Accountants
               </h4>
-              <h1 className="mb-5 pr-16 text-3xl font-bold text-black dark:text-white xl:text-hero ">
-                Robust SaaS Boilerplate and Starter for
-                <span className="relative ml-2.5 inline-block before:absolute before:bottom-2.5 before:left-0 before:-z-1 before:h-3 before:w-full before:bg-titlebg dark:before:bg-titlebgdark ">
-                  Next.js
+              <h1 className="mb-5 pr-16 text-3xl font-bold text-black dark:text-white xl:text-hero">
+                CSPI 
+                <span className="relative ml-2.5 inline-block before:absolute before:bottom-2.5 before:left-0 before:-z-1 before:h-3 before:w-full before:bg-titlebg dark:before:bg-titlebgdark">
+                  Consultants
                 </span>
               </h1>
+              <p className="mb-5">
+                A boutique firm of Chartered Accountants with over three decades of New Zealand based experience.
+              </p>
               <p>
-                Packed with all the key integrations you need for swift SaaS
-                startup launch, including - Authentication, Database, Sanity
-                Blog, Essential UI Components, Business Pages and More.
-                Built-winth - Next.js, React 18 and TypeScript.
+                Providing business advice to progress driven 'small to medium' owner operators, and building solid relationships with a personal service from our convenient central Auckland location.
               </p>
 
               <div className="mt-10">
                 <Link
-                  href={"/auth/signup"}
-                  aria-label="get started button"
+                  href={"/support"}
+                  aria-label="contact us button"
                   className="inline-block rounded-full bg-black px-7.5 py-2.5 text-white duration-300 ease-in-out hover:bg-blackho dark:bg-btndark dark:hover:bg-blackho"
                 >
-                  Get Started
+                  Contact Us
                 </Link>
-
               </div>
             </div>
 
