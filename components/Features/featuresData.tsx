@@ -4,44 +4,30 @@ const featuresData: Feature[] = [
   {
     id: 1,
     icon: "/images/icon/icon-01.svg",
-    title: "Business Advisory",
+    title: "Consulting Services",
     description:
-      "Strategic guidance to optimize your business structure, improve operational efficiency, and develop growth plans tailored to your industry.",
+      "We can assist you to organise your operations through a range of structures.",
   },
   {
     id: 2,
     icon: "/images/icon/icon-02.svg",
-    title: "Tax Planning & Compliance",
+    title: "Tax and Compliance",
     description:
-      "Comprehensive tax services including GST, FBT, PAYE, income tax returns, and proactive strategies to legally minimize your tax burden.",
+      "New Zealand law can be daunting. We can take care of your GST, Fringe Benefit Tax, Payroll and Income Tax.",
   },
   {
     id: 3,
     icon: "/images/icon/icon-03.svg",
-    title: "Financial Management",
+    title: "Budgeting, Cashflows",
     description:
-      "From budgeting and cash flow forecasting to management reports and KPI tracking—giving you clear visibility of your financial position.",
+      "Our aim is to assist our customers increase their business health. In reaching your goals planning is essential.",
   },
   {
     id: 4,
     icon: "/images/icon/icon-04.svg",
-    title: "Annual Financial Statements",
+    title: "Workshop",
     description:
-      "Thorough preparation of accurate financial statements that comply with New Zealand reporting standards and provide valuable insights.",
-  },
-  {
-    id: 5,
-    icon: "/images/icon/icon-05.svg",
-    title: "Business Structuring",
-    description:
-      "Expert advice on the most tax-efficient and protective legal structures for your business, including companies, trusts, and partnerships.",
-  },
-  {
-    id: 6,
-    icon: "/images/icon/icon-06.svg",
-    title: "Accounting Systems Setup",
-    description:
-      "Implementation and optimization of cloud-based accounting software including Xero, MYOB, and QuickBooks tailored to your business needs.",
+      "We offer professional financial training courses, including basic financial knowledge and professional skills training.",
   },
 ];
 
