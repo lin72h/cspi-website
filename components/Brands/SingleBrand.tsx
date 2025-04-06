@@ -1,10 +1,10 @@
-import React, { useRef, useEffect } from "react";
+import React from "react";
 import Image from "next/image";
 import { Brand } from "@/types/brand";
 import { MotionA } from "@/app/libs/framer-utls";
 
 const SingleBrand = ({ brand }: { brand: Brand }) => {
-  const { image, href, name, imageLight, id } = brand;
+  const { image, href, name, id } = brand;
 
   return (
     <>
@@ -25,19 +25,15 @@ const SingleBrand = ({ brand }: { brand: Brand }) => {
         transition={{ duration: 1, delay: id }}
         viewport={{ once: true }}
         href={href}
-        className="animate_top mx-w-full relative block h-10 w-[98px]"
+        className="animate_top mx-auto block h-24 w-[220px] relative p-2"
       >
         <Image
-          className="opacity-65 transition-all duration-300 hover:opacity-100 dark:hidden"
+          className="transition-all duration-300"
           src={image}
           alt={name}
           fill
-        />
-        <Image
-          className="hidden opacity-50 transition-all duration-300 hover:opacity-100 dark:block"
-          src={imageLight}
-          alt={name}
-          fill
+          style={{ objectFit: "contain" }}
+          unoptimized
         />
       </MotionA>
     </>
