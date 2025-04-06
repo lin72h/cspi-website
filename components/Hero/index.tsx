@@ -59,18 +59,20 @@ const Hero = () => {
                   height={21.66}
                   className="absolute -right-6.5 bottom-0 z-1"
                 />
-                <div className=" relative aspect-[700/444] w-full">
+                <div className="relative w-full h-[400px]">
                   <Image
                     className="shadow-solid-l dark:hidden"
-                    src="/images/hero/hero-light.svg"
+                    src="/images/hero/hero-light.jpeg"
                     alt="Hero"
                     fill
+                    style={{ objectFit: "cover" }}
                   />
                   <Image
                     className="hidden shadow-solid-l dark:block"
                     src="/images/hero/hero-dark.svg"
                     alt="Hero"
                     fill
+                    style={{ objectFit: "contain" }}
                   />
                 </div>
               </div>
