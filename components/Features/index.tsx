@@ -8,7 +8,7 @@ const Feature = () => {
   return (
     <>
       {/* <!-- ===== Features Start ===== --> */}
-      <section id="features" className="py-20 lg:py-25 xl:py-30">
+      <section id="features" className="py-12 lg:py-16 xl:py-20">
         <div className="mx-auto max-w-c-1315 px-4 md:px-8 xl:px-0">
           {/* <!-- Section Title Start --> */}
           <SectionHeader
@@ -20,7 +20,7 @@ const Feature = () => {
           />
           {/* <!-- Section Title End --> */}
 
-          <div className="mt-12.5 grid grid-cols-1 gap-7.5 md:grid-cols-2 lg:mt-15 xl:mt-20 xl:gap-12.5 max-w-4xl mx-auto">
+          <div className="mt-8 grid grid-cols-1 gap-6 md:grid-cols-2 lg:mt-10 xl:mt-12 xl:gap-8 max-w-4xl mx-auto">
             {/* <!-- Features item Start --> */}
 
             {featuresData.map((feature, key) => (
