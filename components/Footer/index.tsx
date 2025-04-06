@@ -80,17 +80,17 @@ const Footer = () => {
                 </a>
 
                 <p className="mb-10 mt-5">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  CSPI is a leading technology company based in Auckland, New Zealand, providing innovative solutions since 2020.
                 </p>
 
                 <p className="mb-1.5 text-sectiontitle uppercase tracking-[5px]">
                   contact
                 </p>
                 <a
-                  href="#"
+                  href="mailto:info@cspi.co.nz"
                   className="text-itemtitle font-medium text-black dark:text-white"
                 >
-                  hello@solid.com
+                  info@cspi.co.nz
                 </a>
               </MotionDiv>
 
@@ -338,7 +338,7 @@ const Footer = () => {
               className="animate_top"
             >
               <p>
-                &copy; {new Date().getFullYear()} Solid. All rights reserved
+                &copy; {new Date().getFullYear()} CSPI. All rights reserved
               </p>
             </MotionDiv>
 

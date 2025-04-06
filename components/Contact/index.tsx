@@ -129,7 +129,7 @@ const Contact = () => {
                           />
                         </svg>
                       </span>
-                      By clicking Checkbox, you agree to use our “Form” terms
+                      By clicking Checkbox, you agree to use our "Form" terms
                       And consent cookie usage in browser.
                     </label>
                   </div>
@@ -181,16 +181,16 @@ const Contact = () => {
 
               <div className="5 mb-7">
                 <h4 className="mb-4 text-metatitle3 font-medium text-black dark:text-white">
-                  Our Loaction
+                  Our Location
                 </h4>
-                <p>290 Maryam Springs 260, Courbevoie, Paris, France</p>
+                <p>110 Carlton Gore Road, New Market, Auckland, New Zealand</p>
               </div>
               <div className="5 mb-7">
                 <h4 className="mb-4 text-metatitle3 font-medium text-black dark:text-white">
                   Email Address
                 </h4>
                 <p>
-                  <a href="#">yourmail@domainname.com</a>
+                  <a href="mailto:info@cspi.co.nz">info@cspi.co.nz</a>
                 </p>
               </div>
               <div>
@@ -198,7 +198,7 @@ const Contact = () => {
                   Phone Number
                 </h4>
                 <p>
-                  <a href="#">+009 42334 6343 843</a>
+                  <a href="tel:+64290400366">+64 29 04003669</a>
                 </p>
               </div>
             </MotionDiv>
