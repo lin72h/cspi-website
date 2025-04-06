@@ -214,7 +214,7 @@ const Header = () => {
 
                   <Link
                     href="/auth/signup"
-                    className="flex items-center justify-center rounded-full bg-[rgb(199,155,68)] px-7.5 py-2.5 text-regular text-white duration-300 ease-in-out hover:bg-[rgb(169,132,58)]"
+                    className="flex items-center justify-center rounded-full bg-cspi px-7.5 py-2.5 text-regular text-white duration-300 ease-in-out hover:bg-cspiHover"
                   >
                     Sign Up
                   </Link>

@@ -38,6 +38,8 @@ module.exports = {
         alabaster: "#FBFBFB",
         zumthor: "#EDF5FF",
         socialicon: "#D1D8E0",
+        cspi: "#C79B44",
+        cspiHover: "#A98438",
       },
       fontSize: {
         metatitle: ["12px", "20px"],
