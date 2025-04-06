@@ -27,7 +27,7 @@ const menuData: Menu[] = [
   },
   {
     id: 3,
-    title: "Pages",
+    title: "Resources",
     newTab: false,
     submenu: [
       {
@@ -53,37 +53,7 @@ const menuData: Menu[] = [
         title: "Contact Us",
         newTab: false,
         path: "/support",
-      },
-      {
-        id: 31.5,
-        title: "Blog Grid",
-        newTab: false,
-        path: "/blog",
-      },
-      {
-        id: 34,
-        title: "Sign In",
-        newTab: false,
-        path: "/auth/signin",
-      },
-      {
-        id: 35,
-        title: "Sign Up",
-        newTab: false,
-        path: "/auth/signup",
-      },
-      {
-        id: 35.2,
-        title: "Docs",
-        newTab: false,
-        path: "/docs",
-      },
-      {
-        id: 36,
-        title: "404",
-        newTab: false,
-        path: "/error",
-      },
+      }
     ],
   },
 ];
