@@ -1,6 +1,7 @@
 "use client";
 import { MotionDiv } from "@/app/libs/framer-utls";
 import Image from "next/image";
+import Link from "next/link";
 
 const CTA = () => {
   return (
@@ -30,9 +31,16 @@ const CTA = () => {
               <h2 className="mb-4 w-11/12 text-3xl font-bold text-black dark:text-white xl:text-sectiontitle4">
                 Schedule Your Free Initial Consultation Today
               </h2>
-              <p>
+              <p className="mb-4">
                 Take the first step toward financial clarity and business success. Our team of experienced accountants is ready to understand your unique needs and develop a tailored strategy for your business.
               </p>
+              <div className="flex flex-wrap gap-3">
+                <Link href="/testimonials" className="text-cspi hover:underline">View Client Testimonials</Link>
+                <span className="px-2">•</span>
+                <Link href="/pricing" className="text-cspi hover:underline">Explore Service Packages</Link>
+                <span className="px-2">•</span>
+                <Link href="/faq" className="text-cspi hover:underline">Common Questions</Link>
+              </div>
             </MotionDiv>
             <MotionDiv
               variants={{
@@ -60,7 +68,7 @@ const CTA = () => {
                   alt="Saly"
                   className="hidden xl:block"
                 />
-                <a
+                <Link
                   href="/support"
                   className="inline-flex items-center gap-2.5 rounded-full bg-cspi px-6 py-3 font-medium text-white hover:opacity-90 dark:bg-cspi dark:text-white"
                 >
@@ -79,7 +87,7 @@ const CTA = () => {
                       />
                     </svg>
                   </span>
-                </a>
+                </Link>
               </div>
             </MotionDiv>
           </div>
