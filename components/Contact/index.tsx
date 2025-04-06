@@ -58,7 +58,7 @@ const Contact = () => {
               className="animate_top w-full rounded-lg bg-white p-7.5 shadow-solid-8 dark:border dark:border-strokedark dark:bg-black md:w-3/5 lg:w-3/4 xl:p-15"
             >
               <h2 className="mb-15 text-3xl font-semibold text-black dark:text-white xl:text-sectiontitle2">
-                Send a message
+                Request a Consultation
               </h2>
 
               <form
@@ -80,11 +80,16 @@ const Contact = () => {
                 </div>
 
                 <div className="mb-12.5 flex flex-col gap-7.5 lg:flex-row lg:justify-between lg:gap-14">
-                  <input
-                    type="text"
-                    placeholder="Subject"
+                  <select
                     className="w-full border-b border-stroke bg-transparent pb-3.5 focus:border-waterloo focus:placeholder:text-black focus-visible:outline-none dark:border-strokedark dark:focus:border-manatee dark:focus:placeholder:text-white lg:w-1/2"
-                  />
+                  >
+                    <option value="" disabled selected>Select service needed</option>
+                    <option value="tax-returns">Tax Returns</option>
+                    <option value="financial-statements">Financial Statements</option>
+                    <option value="business-advisory">Business Advisory</option>
+                    <option value="tax-planning">Tax Planning & Strategy</option>
+                    <option value="other">Other Services</option>
+                  </select>
 
                   <input
                     type="text"
@@ -95,7 +100,7 @@ const Contact = () => {
 
                 <div className="mb-11.5 flex">
                   <textarea
-                    placeholder="Message"
+                    placeholder="Tell us about your business and financial needs"
                     rows={4}
                     className="w-full border-b border-stroke bg-transparent focus:border-waterloo focus:placeholder:text-black focus-visible:outline-none dark:border-strokedark dark:focus:border-manatee dark:focus:placeholder:text-white"
                   ></textarea>
@@ -193,13 +198,20 @@ const Contact = () => {
                   <a href="mailto:info@cspi.co.nz">info@cspi.co.nz</a>
                 </p>
               </div>
-              <div>
+              <div className="mb-7">
                 <h4 className="mb-4 text-metatitle3 font-medium text-black dark:text-white">
                   Phone Number
                 </h4>
                 <p>
                   <a href="tel:+64290400366">+64 29 04003669</a>
                 </p>
+              </div>
+              <div>
+                <h4 className="mb-4 text-metatitle3 font-medium text-black dark:text-white">
+                  Business Hours
+                </h4>
+                <p>Monday - Friday: 8:30AM - 5:00PM</p>
+                <p>Weekend: Closed</p>
               </div>
             </MotionDiv>
           </div>

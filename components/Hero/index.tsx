@@ -12,25 +12,32 @@ const Hero = () => {
                 ✓ Professional Chartered Accountants
               </h4>
               <h1 className="mb-5 pr-16 text-3xl font-bold text-black dark:text-white xl:text-hero">
-                CSPI 
+                Empowering Your
                 <span className="relative ml-2.5 inline-block before:absolute before:bottom-2.5 before:left-0 before:-z-1 before:h-3 before:w-full before:bg-titlebg dark:before:bg-titlebgdark">
-                  Consultants
+                  Financial Success
                 </span>
               </h1>
               <p className="mb-5">
-                A boutique firm of Chartered Accountants with over three decades of New Zealand based experience.
+                CSPI Consultants is a boutique firm of Chartered Accountants with over three decades of New Zealand based experience.
               </p>
               <p>
-                Providing business advice to progress driven 'small to medium' owner operators, and building solid relationships with a personal service from our convenient central Auckland location.
+                We help small to medium businesses minimize tax burdens, ensure compliance, and develop strategic financial plans for sustainable growth. Experience personalized service from our convenient central Auckland location.
               </p>
 
-              <div className="mt-10">
+              <div className="mt-10 flex flex-wrap gap-5">
                 <Link
                   href={"/support"}
                   aria-label="contact us button"
                   className="inline-block rounded-full bg-cspi px-7.5 py-2.5 text-white duration-300 ease-in-out hover:bg-cspiHover dark:bg-cspi dark:hover:bg-cspiHover"
                 >
                   Contact Us
+                </Link>
+                <Link
+                  href={"/pricing"}
+                  aria-label="services button"
+                  className="inline-block rounded-full border border-cspi px-7.5 py-2.5 text-cspi duration-300 ease-in-out hover:bg-cspi hover:text-white dark:border-cspi dark:text-white dark:hover:bg-cspi"
+                >
+                  Our Services
                 </Link>
               </div>
             </div>

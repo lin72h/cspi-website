@@ -52,20 +52,20 @@ const FAQ = () => {
               className="animate_left md:w-2/5 lg:w-1/2"
             >
               <span className="font-medium uppercase text-black dark:text-white">
-                OUR FAQS
+                FREQUENTLY ASKED
               </span>
               <h2 className="relative mb-6 text-3xl font-bold text-black dark:text-white xl:text-hero">
-                Frequently Asked
+                Common Questions About
                 <span className="relative inline-block before:absolute before:bottom-2.5 before:left-0 before:-z-1 before:h-3 before:w-full before:bg-titlebg2 dark:before:bg-titlebgdark">
-                  Questions
+                  Accounting Services
                 </span>
               </h2>
 
               <a
-                href="#"
+                href="/support"
                 className="group mt-7.5 inline-flex items-center gap-2.5 text-black hover:text-primary dark:text-white dark:hover:text-primary"
               >
-                <span className="duration-300 group-hover:pr-2">Know More</span>
+                <span className="duration-300 group-hover:pr-2">Contact Us For More Questions</span>
                 <svg
                   width="14"
                   height="14"

@@ -46,7 +46,7 @@ export const PricingItem = ({ price }: { price: any }) => {
       viewport={{ once: true }}
       className="animate_top group relative rounded-lg border border-stroke bg-white p-7.5 shadow-solid-10 dark:border-strokedark dark:bg-blacksection dark:shadow-none md:w-[45%] lg:w-1/3 xl:p-12.5"
     >
-      {price.nickname === "Medium" && (
+      {price.nickname === "Growth" && (
         <div className="absolute -right-3.5 top-7.5 -rotate-90 rounded-bl-full rounded-tl-full bg-primary px-4.5 py-1.5 text-metatitle font-medium uppercase text-white">
           popular
         </div>
@@ -60,70 +60,31 @@ export const PricingItem = ({ price }: { price: any }) => {
         <span className="text-regular text-waterloo dark:text-manatee">
           /month
         </span>
-        {/* {price.id} */}
       </h3>
       <h4 className="mb-2.5 text-para2 font-medium text-black dark:text-white">
-        {price.nickname} Pack
+        {price.nickname} Package
       </h4>
-      <p>Lorem ipsum dolor sit amet, consec adipisicing elit.</p>
+      <p>{price.description}</p>
 
       <div className="mt-9 border-t border-stroke pb-12.5 pt-9 dark:border-strokedark">
-        {price.nickname === "Small" && (
-          <ul>
-            <li className="mb-4 text-black last:mb-0 dark:text-manatee">
-              300 GB Storage
+        <ul>
+          {price.features && price.features.map((feature: string, index: number) => (
+            <li 
+              key={index} 
+              className="mb-4 text-black last:mb-0 dark:text-manatee flex items-start"
+            >
+              <span className="mr-2 text-primary">✓</span> {feature}
             </li>
-            <li className="mb-4 text-black last:mb-0 dark:text-manatee">
-              Unlimited Photos and Videos
-            </li>
-            <li className="mb-4 text-black opacity-40 last:mb-0 dark:text-manatee">
-              Exclusive Support
-            </li>
-            <li className="mb-4 text-black opacity-40 last:mb-0 dark:text-manatee">
-              Custom Branding Strategy
-            </li>
-          </ul>
-        )}
-        {price.nickname === "Medium" && (
-          <ul>
-            <li className="mb-4 text-black last:mb-0 dark:text-manatee">
-              300 GB Storage
-            </li>
-            <li className="mb-4 text-black last:mb-0 dark:text-manatee">
-              Unlimited Photos and Videos
-            </li>
-            <li className="mb-4 text-black last:mb-0 dark:text-manatee">
-              Exclusive Support
-            </li>
-            <li className="mb-4 text-black opacity-40 last:mb-0 dark:text-manatee">
-              Custom Branding Strategy
-            </li>
-          </ul>
-        )}
-        {price.nickname === "Large" && (
-          <ul>
-            <li className="mb-4 text-black last:mb-0 dark:text-manatee">
-              300 GB Storage
-            </li>
-            <li className="mb-4 text-black last:mb-0 dark:text-manatee">
-              Unlimited Photos and Videos
-            </li>
-            <li className="mb-4 text-black last:mb-0 dark:text-manatee ">
-              Exclusive Support
-            </li>
-            <li className="mb-4 text-black last:mb-0 dark:text-manatee ">
-              Custom Branding Strategy
-            </li>
-          </ul>
-        )}
+          ))}
+        </ul>
       </div>
 
       <button
-        aria-label="purchase this plan"
+        aria-label="contact about this plan"
         onClick={handleSubscription}
         className="group/btn inline-flex items-center gap-2.5 font-medium text-primary transition-all duration-300 dark:text-white dark:hover:text-primary"
       >
-        <span className="duration-300 group-hover/btn:pr-2"> Get the Plan</span>
+        <span className="duration-300 group-hover/btn:pr-2">Contact Us</span>
         <svg
           width="14"
           height="14"

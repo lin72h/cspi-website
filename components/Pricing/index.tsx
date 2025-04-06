@@ -14,9 +14,9 @@ const Pricing = () => {
           <div className="animate_top mx-auto text-center">
             <SectionHeader
               headerInfo={{
-                title: `PRICING PLANS`,
-                subtitle: `Simple Pricing`,
-                description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. In convallis tortor eros. Donec vitae tortor lacus. Phasellus aliquam ante in maximus.`,
+                title: `SERVICE PACKAGES`,
+                subtitle: `Tailored Accounting Solutions`,
+                description: `We offer flexible service packages designed to meet the unique needs of your business. From basic compliance to comprehensive financial management, we have a solution that fits your requirements and budget.`,
               }}
             />
           </div>

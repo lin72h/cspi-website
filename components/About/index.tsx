@@ -30,13 +30,13 @@ const About = () => {
             >
               <Image
                 src="/images/about/about-light-01.png"
-                alt="About"
+                alt="About CSPI"
                 className="dark:hidden"
                 fill
               />
               <Image
                 src="/images/about/about-dark-01.png"
-                alt="About"
+                alt="About CSPI"
                 className="hidden dark:block"
                 fill
               />
@@ -61,19 +61,20 @@ const About = () => {
             >
               <h4 className="font-medium uppercase text-black dark:text-white">
                 <span className="mb-4 mr-4 inline-flex rounded-full bg-meta px-4.5 py-1 text-metatitle uppercase text-white ">
-                  New
+                  Established
                 </span>{" "}
-                SaaS Boilerplate for Next.js
+                Chartered Accountants in Auckland
               </h4>
               <h2 className="relative mb-6 text-3xl font-bold text-black dark:text-white xl:text-hero">
-                A Complete Solution for
+                Trusted Expertise for
                 <span className="relative inline-block before:absolute before:bottom-2.5 before:left-0 before:-z-1 before:h-3 before:w-full before:bg-titlebg dark:before:bg-titlebgdark">
-                  SaaS Startup
+                  Financial Success
                 </span>
               </h2>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
-                ultricies lacus non fermentum ultrices. Fusce consectetur le.
+                With over three decades of experience serving New Zealand businesses, 
+                CSPI Consultants has built a reputation for excellence in accounting 
+                and business advisory services in the heart of Auckland.
               </p>
 
               <div className="mt-7.5 flex items-center gap-5">
@@ -84,10 +85,9 @@ const About = () => {
                 </div>
                 <div className="w-3/4">
                   <h3 className="mb-0.5 text-metatitle2 text-black dark:text-white">
-                    Mailchimp for Newsletter Emails + SMTP for Transactional
-                    Emails
+                    Personalized Support for Business Growth
                   </h3>
-                  <p>Ut ultricies lacus non fermentum ultrices.</p>
+                  <p>We build lasting relationships with our clients to understand their unique needs.</p>
                 </div>
               </div>
               <div className="mt-7.5 flex items-center gap-5">
@@ -98,9 +98,9 @@ const About = () => {
                 </div>
                 <div className="w-3/4">
                   <h3 className="mb-0.5 text-metatitle2 text-black dark:text-white">
-                    Algolia Integration for Site Search
+                    Expertise in New Zealand Tax Regulations
                   </h3>
-                  <p>consectetur adipiscing elit fermentum ultricies.</p>
+                  <p>Our team stays current with all tax legislation to maximize your benefits.</p>
                 </div>
               </div>
             </MotionDiv>
@@ -132,25 +132,26 @@ const About = () => {
               className="animate_left md:w-1/2"
             >
               <h4 className="font-medium uppercase text-black dark:text-white">
-                Launch Your SaaS Fast
+                Our Commitment to Excellence
               </h4>
               <h2 className="relative mb-6 text-3xl font-bold text-black dark:text-white xl:text-hero">
-                Packed with All Essential
+                Building Financial
                 <span className="relative ml-2.5 inline-block before:absolute before:bottom-2.5 before:left-0 before:-z-1 before:h-3 before:w-full before:bg-titlebg2 dark:before:bg-titlebgdark">
-                  Integrations
+                  Clarity
                 </span>
               </h2>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
-                ultricies lacus non fermentum ultrices. Fusce consectetur le.
+                At CSPI Consultants, we believe in empowering our clients through financial clarity. 
+                We work closely with small to medium businesses to develop comprehensive financial strategies 
+                that support sustainable growth and long-term success.
               </p>
               <div>
                 <a
-                  href="#"
+                  href="/support"
                   className="group mt-7.5 inline-flex items-center gap-2.5 text-black hover:text-primary dark:text-white dark:hover:text-primary"
                 >
                   <span className="duration-300 group-hover:pr-2">
-                    Know More
+                    Contact Us
                   </span>
 
                   <svg
@@ -187,13 +188,13 @@ const About = () => {
             >
               <Image
                 src="./images/about/about-light-02.svg"
-                alt="About"
+                alt="About CSPI Services"
                 className="dark:hidden"
                 fill
               />
               <Image
                 src="./images/about/about-dark-02.svg"
-                alt="About"
+                alt="About CSPI Services"
                 className="hidden dark:block"
                 fill
               />

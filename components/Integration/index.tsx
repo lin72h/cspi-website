@@ -11,9 +11,9 @@ const Integration = () => {
           {/* <!-- Section Title Start --> */}
           <SectionHeader
             headerInfo={{
-              title: `INTEGRATIONS`,
-              subtitle: `Packed with all the key integrations you need`,
-              description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. In convallis tortor eros. Donec vitae tortor lacus. Phasellus aliquam ante in maximus.`,
+              title: `INDUSTRIES`,
+              subtitle: `Specialized Expertise Across Business Sectors`,
+              description: `Our team brings deep industry knowledge to each client relationship. We understand the specific challenges and opportunities in various business sectors across New Zealand.`,
             }}
           />
 
@@ -38,14 +38,14 @@ const Integration = () => {
               className="hidden dark:block"
             />
           </div>
-          <div className="flex flex-wrap justify-around gap-y-10">
+          
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             <MotionDiv
               variants={{
                 hidden: {
                   opacity: 0,
                   y: -20,
                 },
-
                 visible: {
                   opacity: 1,
                   y: 0,
@@ -55,15 +55,11 @@ const Integration = () => {
               whileInView="visible"
               transition={{ duration: 1, delay: 0.1 }}
               viewport={{ once: true }}
-              className="animate_top w-1/6"
+              className="animate_top"
             >
-              <div className="inline-block rounded-[10px] bg-white p-4.5 shadow-solid-7 dark:bg-btndark">
-                <Image
-                  width={50}
-                  height={50}
-                  src="./images/brand/brand-07.svg"
-                  alt="Brand"
-                />
+              <div className="rounded-lg bg-white p-7.5 shadow-solid-3 dark:bg-blacksection">
+                <h3 className="mb-4 text-xl font-bold text-black dark:text-white">Retail & E-commerce</h3>
+                <p>We help retail businesses with inventory management, cash flow optimization, and GST compliance, whether you operate physical stores or online platforms.</p>
               </div>
             </MotionDiv>
 
@@ -73,7 +69,6 @@ const Integration = () => {
                   opacity: 0,
                   y: -20,
                 },
-
                 visible: {
                   opacity: 1,
                   y: 0,
@@ -81,36 +76,13 @@ const Integration = () => {
               }}
               initial="hidden"
               whileInView="visible"
-              transition={{ duration: 1, delay: 0.1 }}
+              transition={{ duration: 1, delay: 0.2 }}
               viewport={{ once: true }}
-              className="animate_top w-1/6"
-            ></MotionDiv>
-
-            <MotionDiv
-              variants={{
-                hidden: {
-                  opacity: 0,
-                  y: -20,
-                },
-
-                visible: {
-                  opacity: 1,
-                  y: 0,
-                },
-              }}
-              initial="hidden"
-              whileInView="visible"
-              transition={{ duration: 1, delay: 0.1 }}
-              viewport={{ once: true }}
-              className="animate_top w-1/6"
+              className="animate_top"
             >
-              <div className="inline-block rounded-[10px] bg-white p-4.5 shadow-solid-7 dark:bg-btndark">
-                <Image
-                  width={50}
-                  height={50}
-                  src="./images/brand/brand-08.svg"
-                  alt="Brand"
-                />
+              <div className="rounded-lg bg-white p-7.5 shadow-solid-3 dark:bg-blacksection">
+                <h3 className="mb-4 text-xl font-bold text-black dark:text-white">Professional Services</h3>
+                <p>For consultants, lawyers, architects and other service providers, we focus on efficient business structures, partnership arrangements, and sustainable growth strategies.</p>
               </div>
             </MotionDiv>
 
@@ -120,7 +92,6 @@ const Integration = () => {
                   opacity: 0,
                   y: -20,
                 },
-
                 visible: {
                   opacity: 1,
                   y: 0,
@@ -128,38 +99,13 @@ const Integration = () => {
               }}
               initial="hidden"
               whileInView="visible"
-              transition={{ duration: 1, delay: 0.1 }}
+              transition={{ duration: 1, delay: 0.3 }}
               viewport={{ once: true }}
-              className="animate_top w-1/6"
+              className="animate_top"
             >
-              <div className="h-[11px] w-[11px] rounded-full bg-[#FFDB26]"></div>
-            </MotionDiv>
-
-            <MotionDiv
-              variants={{
-                hidden: {
-                  opacity: 0,
-                  y: -20,
-                },
-
-                visible: {
-                  opacity: 1,
-                  y: 0,
-                },
-              }}
-              initial="hidden"
-              whileInView="visible"
-              transition={{ duration: 1, delay: 0.1 }}
-              viewport={{ once: true }}
-              className="animate_top w-1/6"
-            >
-              <div className="inline-block rounded-[10px] bg-white p-4.5 shadow-solid-7 dark:bg-btndark">
-                <Image
-                  width={50}
-                  height={50}
-                  src="./images/brand/brand-09.svg"
-                  alt="Brand"
-                />
+              <div className="rounded-lg bg-white p-7.5 shadow-solid-3 dark:bg-blacksection">
+                <h3 className="mb-4 text-xl font-bold text-black dark:text-white">Property & Real Estate</h3>
+                <p>We provide specialized tax advice for property developers, investors, and managers, navigating complex depreciation rules and maximizing legitimate deductions.</p>
               </div>
             </MotionDiv>
 
@@ -169,7 +115,6 @@ const Integration = () => {
                   opacity: 0,
                   y: -20,
                 },
-
                 visible: {
                   opacity: 1,
                   y: 0,
@@ -177,57 +122,13 @@ const Integration = () => {
               }}
               initial="hidden"
               whileInView="visible"
-              transition={{ duration: 1, delay: 0.1 }}
+              transition={{ duration: 1, delay: 0.4 }}
               viewport={{ once: true }}
-              className="animate_top w-1/6"
-            ></MotionDiv>
-
-            <MotionDiv
-              variants={{
-                hidden: {
-                  opacity: 0,
-                  y: -20,
-                },
-
-                visible: {
-                  opacity: 1,
-                  y: 0,
-                },
-              }}
-              initial="hidden"
-              whileInView="visible"
-              transition={{ duration: 1, delay: 0.1 }}
-              viewport={{ once: true }}
-              className="animate_top w-1/6"
+              className="animate_top"
             >
-              <div className="h-[15px] w-[15px] rounded-full bg-[#62E888]"></div>
-            </MotionDiv>
-
-            <MotionDiv
-              variants={{
-                hidden: {
-                  opacity: 0,
-                  y: -20,
-                },
-
-                visible: {
-                  opacity: 1,
-                  y: 0,
-                },
-              }}
-              initial="hidden"
-              whileInView="visible"
-              transition={{ duration: 1, delay: 0.1 }}
-              viewport={{ once: true }}
-              className="animate_top w-1/6"
-            >
-              <div className="inline-block rounded-[10px] bg-white p-4.5 shadow-solid-7 dark:bg-btndark">
-                <Image
-                  width={50}
-                  height={50}
-                  src="./images/brand/brand-10.svg"
-                  alt="Brand"
-                />
+              <div className="rounded-lg bg-white p-7.5 shadow-solid-3 dark:bg-blacksection">
+                <h3 className="mb-4 text-xl font-bold text-black dark:text-white">Hospitality & Tourism</h3>
+                <p>Our experience with cafes, restaurants, and accommodations includes revenue management, seasonal planning, and clear financial reporting systems.</p>
               </div>
             </MotionDiv>
 
@@ -237,7 +138,6 @@ const Integration = () => {
                   opacity: 0,
                   y: -20,
                 },
-
                 visible: {
                   opacity: 1,
                   y: 0,
@@ -245,38 +145,13 @@ const Integration = () => {
               }}
               initial="hidden"
               whileInView="visible"
-              transition={{ duration: 1, delay: 0.1 }}
+              transition={{ duration: 1, delay: 0.5 }}
               viewport={{ once: true }}
-              className="animate_top w-1/6"
+              className="animate_top"
             >
-              <div className="h-[23px] w-[23px] rounded-full bg-[#EF5C00]"></div>
-            </MotionDiv>
-
-            <MotionDiv
-              variants={{
-                hidden: {
-                  opacity: 0,
-                  y: -20,
-                },
-
-                visible: {
-                  opacity: 1,
-                  y: 0,
-                },
-              }}
-              initial="hidden"
-              whileInView="visible"
-              transition={{ duration: 1, delay: 0.1 }}
-              viewport={{ once: true }}
-              className="animate_top w-1/6"
-            >
-              <div className="inline-block rounded-[10px] bg-white p-4.5 shadow-solid-7 dark:bg-btndark">
-                <Image
-                  width={50}
-                  height={50}
-                  src="./images/brand/brand-11.svg"
-                  alt="Brand"
-                />
+              <div className="rounded-lg bg-white p-7.5 shadow-solid-3 dark:bg-blacksection">
+                <h3 className="mb-4 text-xl font-bold text-black dark:text-white">Construction & Trades</h3>
+                <p>We support contractors and construction businesses with job costing, project accounting, and cash flow management designed for project-based work.</p>
               </div>
             </MotionDiv>
 
@@ -286,7 +161,6 @@ const Integration = () => {
                   opacity: 0,
                   y: -20,
                 },
-
                 visible: {
                   opacity: 1,
                   y: 0,
@@ -294,38 +168,13 @@ const Integration = () => {
               }}
               initial="hidden"
               whileInView="visible"
-              transition={{ duration: 1, delay: 0.1 }}
+              transition={{ duration: 1, delay: 0.6 }}
               viewport={{ once: true }}
-              className="animate_top w-1/6"
+              className="animate_top"
             >
-              <div className="h-[15px] w-[15px] rounded-full bg-[#016BFF]"></div>
-            </MotionDiv>
-
-            <MotionDiv
-              variants={{
-                hidden: {
-                  opacity: 0,
-                  y: -20,
-                },
-
-                visible: {
-                  opacity: 1,
-                  y: 0,
-                },
-              }}
-              initial="hidden"
-              whileInView="visible"
-              transition={{ duration: 1, delay: 0.1 }}
-              viewport={{ once: true }}
-              className="animate_top w-1/6"
-            >
-              <div className="inline-block rounded-[10px] bg-white p-4.5 shadow-solid-7 dark:bg-btndark">
-                <Image
-                  width={50}
-                  height={50}
-                  src="./images/brand/brand-12.svg"
-                  alt="Brand"
-                />
+              <div className="rounded-lg bg-white p-7.5 shadow-solid-3 dark:bg-blacksection">
+                <h3 className="mb-4 text-xl font-bold text-black dark:text-white">Startups & Technology</h3>
+                <p>For innovative businesses and startups, we provide guidance on capital raising, R&D incentives, and scalable financial structures to support growth phases.</p>
               </div>
             </MotionDiv>
           </div>

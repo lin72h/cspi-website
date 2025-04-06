@@ -7,7 +7,7 @@ import { MotionDiv } from "@/app/libs/framer-utls";
 const FunFact = () => {
   return (
     <>
-      {/* <!-- ===== Funfact Start ===== --> */}
+      {/* <!-- ===== Achievements Start ===== --> */}
       <section className="px-4 py-20 md:px-8 lg:py-22.5 2xl:px-0">
         <div className="relative z-1 mx-auto max-w-c-1390 rounded-lg bg-gradient-to-t from-[#F8F9FF] to-[#DEE7FF] py-22.5 dark:bg-blacksection dark:bg-gradient-to-t dark:from-transparent dark:to-transparent dark:stroke-strokedark xl:py-27.5">
           <Image
@@ -57,12 +57,10 @@ const FunFact = () => {
             className="animate_top mx-auto mb-12.5 px-4 text-center md:w-4/5 md:px-0 lg:mb-17.5 lg:w-2/3 xl:w-1/2"
           >
             <h2 className="mb-4 text-3xl font-bold text-black dark:text-white xl:text-sectiontitle3">
-              Trusted by Global Companies.
+              Trusted by Businesses Across New Zealand.
             </h2>
             <p className="mx-auto lg:w-11/12">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. In
-              convallis tortor eros. Donec vitae tortor lacus. Phasellus aliquam
-              ante in maximus.
+              For over three decades, we've helped businesses navigate financial challenges, optimize tax positions, and achieve sustainable growth through strategic financial planning.
             </p>
           </MotionDiv>
 
@@ -86,9 +84,9 @@ const FunFact = () => {
               className="animate_top text-center"
             >
               <h3 className="mb-2.5 text-3xl font-bold text-black dark:text-white xl:text-sectiontitle3">
-                500K
+                30+
               </h3>
-              <p className="text-lg lg:text-para2">World Wide Clients</p>
+              <p className="text-lg lg:text-para2">Years of Experience</p>
             </MotionDiv>
             <MotionDiv
               variants={{
@@ -109,9 +107,9 @@ const FunFact = () => {
               className="animate_top text-center"
             >
               <h3 className="mb-2.5 text-3xl font-bold text-black dark:text-white xl:text-sectiontitle3">
-                1M+
+                500+
               </h3>
-              <p className="text-lg lg:text-para2">Downloads</p>
+              <p className="text-lg lg:text-para2">Satisfied Clients</p>
             </MotionDiv>
             <MotionDiv
               variants={{
@@ -132,14 +130,14 @@ const FunFact = () => {
               className="animate_top text-center"
             >
               <h3 className="mb-2.5 text-3xl font-bold text-black dark:text-white xl:text-sectiontitle3">
-                865
+                $100M+
               </h3>
-              <p className="text-lg lg:text-para2">Winning Award</p>
+              <p className="text-lg lg:text-para2">Tax Savings Secured</p>
             </MotionDiv>
           </div>
         </div>
       </section>
-      {/* <!-- ===== Funfact End ===== --> */}
+      {/* <!-- ===== Achievements End ===== --> */}
     </>
   );
 };

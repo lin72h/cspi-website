@@ -10,7 +10,7 @@ const FeaturesTab = () => {
 
   return (
     <>
-      {/* <!-- ===== Features Tab Start ===== --> */}
+      {/* <!-- ===== Client Journey Start ===== --> */}
       <section className="relative pb-20 pt-18.5 lg:pb-22.5">
         <div className="relative mx-auto max-w-c-1390 px-4 md:px-8 2xl:px-0">
           <div className="absolute -top-16 -z-1 mx-auto h-[350px] w-[90%]">
@@ -62,7 +62,7 @@ const FeaturesTab = () => {
               </div>
               <div className="md:w-3/5 lg:w-auto">
                 <button className="text-sm font-medium text-black dark:text-white xl:text-regular">
-                  Clean User Interface
+                  Initial Consultation
                 </button>
               </div>
             </div>
@@ -81,7 +81,7 @@ const FeaturesTab = () => {
               </div>
               <div className="md:w-3/5 lg:w-auto">
                 <button className="text-sm font-medium text-black dark:text-white xl:text-regular">
-                  Essential Business Pages
+                  Strategy Development
                 </button>
               </div>
             </div>
@@ -100,7 +100,7 @@ const FeaturesTab = () => {
               </div>
               <div className="md:w-3/5 lg:w-auto">
                 <button className="text-sm font-medium text-black dark:text-white xl:text-regular">
-                  Fully Functional Integrations
+                  Ongoing Support
                 </button>
               </div>
             </div>
@@ -138,7 +138,7 @@ const FeaturesTab = () => {
           {/* <!-- Tab Content End --> */}
         </div>
       </section>
-      {/* <!-- ===== Features Tab End ===== --> */}
+      {/* <!-- ===== Client Journey End ===== --> */}
     </>
   );
 };
