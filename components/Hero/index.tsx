@@ -28,7 +28,7 @@ const Hero = () => {
                 <Link
                   href={"/support"}
                   aria-label="contact us button"
-                  className="inline-block rounded-full bg-black px-7.5 py-2.5 text-white duration-300 ease-in-out hover:bg-blackho dark:bg-btndark dark:hover:bg-blackho"
+                  className="inline-block rounded-full bg-cspi px-7.5 py-2.5 text-white duration-300 ease-in-out hover:bg-cspiHover dark:bg-cspi dark:hover:bg-cspiHover"
                 >
                   Contact Us
                 </Link>
