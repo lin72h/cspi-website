@@ -3,30 +3,30 @@ import { Menu } from "@/types/menu";
 const menuData: Menu[] = [
   {
     id: 1,
-    title: "Home",
-    newTab: false,
-    path: "/",
-  },
-  {
-    id: 2,
-    title: "Features",
+    title: "Consulting Services",
     newTab: false,
     path: "/#features",
   },
   {
-    id: 2.1,
-    title: "Blog",
+    id: 2,
+    title: "Tax and Compliance",
     newTab: false,
-    path: "/blog",
-  },
-  {
-    id: 2.3,
-    title: "Docs",
-    newTab: false,
-    path: "/docs",
+    path: "/#features",
   },
   {
     id: 3,
+    title: "Budgeting",
+    newTab: false,
+    path: "/#features",
+  },
+  {
+    id: 4,
+    title: "Workshop",
+    newTab: false,
+    path: "/#features",
+  },
+  {
+    id: 5,
     title: "Resources",
     newTab: false,
     submenu: [
