@@ -15,7 +15,7 @@ const Feature = () => {
             headerInfo={{
               title: "SERVICES",
               subtitle: "Services Offering",
-              description: `We have built an excellent reputation taking care of a wide variety of tax and accounting needs for our valued clients. Whether you need assistance with tax filings or something more complex.`,
+              description: `Our comprehensive range of accounting and financial services designed to support your business needs and drive your success.`,
             }}
           />
           {/* <!-- Section Title End --> */}
