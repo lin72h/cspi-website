@@ -14,7 +14,7 @@ const SingleFeature = ({ feature }: { feature: Feature }) => {
         return "/consulting-services";
       case "Tax and Compliance":
         return "/tax-and-compliance";
-      case "Budgeting, Cashflows":
+      case "Budgeting and Cashflows":
         return "/budgeting-cashflows";
       case "Workshop":
         return "/workshop";
@@ -42,12 +42,12 @@ const SingleFeature = ({ feature }: { feature: Feature }) => {
           whileInView="visible"
           transition={{ duration: 0.5 }}
           viewport={{ once: true }}
-          className="animate_top z-40 rounded-lg border border-white bg-white p-8 shadow-solid-3 transition-all hover:shadow-solid-4 hover:border-cspi dark:border-strokedark dark:bg-blacksection dark:hover:bg-hoverdark xl:p-10 h-full flex flex-col cursor-pointer"
+          className="animate_top z-40 rounded-lg border border-white bg-white p-6 shadow-solid-3 transition-all hover:shadow-solid-4 hover:border-cspi dark:border-strokedark dark:bg-blacksection dark:hover:bg-hoverdark xl:p-8 h-full flex flex-col cursor-pointer"
         >
-          <div className="relative flex h-18 w-18 items-center justify-center rounded-[4px] bg-primary mb-6">
-            <Image src={icon} width={40} height={40} alt={title} />
+          <div className="relative flex h-16 w-16 items-center justify-center rounded-[4px] bg-primary mb-5">
+            <Image src={icon} width={36} height={36} alt={title} />
           </div>
-          <h3 className="mb-4 text-2xl font-semibold text-black dark:text-white xl:text-itemtitle">
+          <h3 className="mb-3 text-xl font-semibold text-black dark:text-white xl:text-itemtitle">
             {title}
           </h3>
           <p className="text-base">{description}</p>

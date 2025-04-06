@@ -18,7 +18,7 @@ const featuresData: Feature[] = [
   {
     id: 3,
     icon: "/images/icon/icon-03.svg",
-    title: "Budgeting, Cashflows",
+    title: "Budgeting and Cashflows",
     description:
       "Our aim is to assist our customers increase their business health. In reaching your goals planning is essential.",
   },

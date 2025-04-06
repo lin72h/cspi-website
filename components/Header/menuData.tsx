@@ -15,7 +15,7 @@ const menuData: Menu[] = [
   },
   {
     id: 3,
-    title: "Budgeting",
+    title: "Budgeting and Cashflows",
     newTab: false,
     path: "/budgeting-cashflows",
   },
