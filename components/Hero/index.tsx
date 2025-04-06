@@ -6,8 +6,8 @@ const Hero = () => {
     <>
       <section className="overflow-hidden pb-20 pt-35 md:pt-40 xl:pb-25 xl:pt-46">
         <div className="mx-auto max-w-c-1390 px-4 md:px-8 2xl:px-0">
-          <div className="flex lg:items-center lg:gap-8 xl:gap-32.5">
-            <div className=" md:w-1/2">
+          <div className="flex flex-col lg:flex-row lg:items-center lg:gap-8 xl:gap-16">
+            <div className="md:w-1/2 lg:w-2/5">
               <h4 className="mb-4.5 text-lg font-medium text-black dark:text-white">
                 ✓ Professional Chartered Accountants
               </h4>
@@ -35,7 +35,7 @@ const Hero = () => {
               </div>
             </div>
 
-            <div className="hidden md:w-1/2 lg:block">
+            <div className="hidden md:w-1/2 lg:block lg:w-3/5">
               <div className="relative 2xl:-mr-7.5">
                 <Image
                   src="/images/shape/shape-01.png"
@@ -64,7 +64,8 @@ const Hero = () => {
                     src="/images/hero/hero-light.jpeg"
                     alt="Hero"
                     fill
-                    style={{ objectFit: "cover" }}
+                    style={{ objectFit: "cover", objectPosition: "center 30%" }}
+                    priority
                   />
                   <Image
                     className="hidden shadow-solid-l dark:block"
