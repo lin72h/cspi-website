@@ -190,8 +190,6 @@ const Header = () => {
                 </svg>
               </button>
 
-              <ThemeToggler />
-
               {session ? (
                 <>
                   <p>{session?.user?.name}</p>
