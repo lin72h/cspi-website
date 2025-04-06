@@ -3,7 +3,12 @@ import Image from "next/image";
 import { Brand } from "@/types/brand";
 import { MotionA } from "@/app/libs/framer-utls";
 
-const SingleBrand = ({ brand }: { brand: Brand }) => {
+interface SingleBrandProps {
+  brand: Brand;
+  className?: string;
+}
+
+const SingleBrand = ({ brand, className = "" }: SingleBrandProps) => {
   const { image, href, name, id } = brand;
 
   return (
@@ -25,7 +30,7 @@ const SingleBrand = ({ brand }: { brand: Brand }) => {
         transition={{ duration: 1, delay: id }}
         viewport={{ once: true }}
         href={href}
-        className="animate_top mx-auto block h-24 w-[220px] relative p-2"
+        className={`animate_top mx-auto block h-24 w-[220px] relative p-2 ${className}`}
       >
         <Image
           className="transition-all duration-300"

@@ -12,7 +12,11 @@ const Brands = () => {
           <h3 className="mb-10 text-center text-lg font-medium text-black dark:text-white">Trusted by Leading Companies</h3>
           <div className="grid grid-cols-1 items-center justify-center gap-10 md:grid-cols-3 lg:gap-20">
             {brandData.map((brand, key) => (
-              <SingleBrand brand={brand} key={key} />
+              <SingleBrand 
+                brand={brand} 
+                key={key} 
+                className={key === 0 ? "h-32 w-[300px]" : ""}
+              />
             ))}
           </div>
         </div>
