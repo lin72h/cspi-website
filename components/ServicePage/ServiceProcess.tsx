@@ -3,14 +3,23 @@ import { ServiceProcessStep } from "@/types/servicePageData";
 import Image from "next/image";
 import SectionHeader from "../Common/SectionHeader";
 import { MotionDiv } from "@/app/libs/framer-utls";
+import { useLanguage } from "@/app/context/LanguageContext";
 
 interface ServiceProcessProps {
   title: string;
+  titleZh?: string;
   description: string;
+  descriptionZh?: string;
   steps: ServiceProcessStep[];
 }
 
-const ServiceProcess = ({ title, description, steps }: ServiceProcessProps) => {
+const ServiceProcess = ({ title, titleZh, description, descriptionZh, steps }: ServiceProcessProps) => {
+  const { language } = useLanguage();
+  
+  // Display content based on current language
+  const displayTitle = language === "zh" && titleZh ? titleZh : title;
+  const displayDescription = language === "zh" && descriptionZh ? descriptionZh : description;
+  
   return (
     <section className="relative pb-20 pt-18.5 lg:pb-22.5">
       <div className="relative mx-auto max-w-c-1390 px-4 md:px-8 2xl:px-0">
@@ -33,8 +42,8 @@ const ServiceProcess = ({ title, description, steps }: ServiceProcessProps) => {
         <SectionHeader
           headerInfo={{
             title: "PROCESS",
-            subtitle: title,
-            description: description,
+            subtitle: displayTitle,
+            description: displayDescription,
           }}
         />
         {/* Section Title End */}
@@ -65,6 +74,11 @@ const ProcessStep = ({
 }) => {
   const isEven = index % 2 === 0;
   const isLast = index === total - 1;
+  const { language } = useLanguage();
+  
+  // Display content based on current language
+  const displayTitle = language === "zh" && step.titleZh ? step.titleZh : step.title;
+  const displayDescription = language === "zh" && step.descriptionZh ? step.descriptionZh : step.description;
 
   return (
     <div className={`flex items-center gap-8 ${isLast ? '' : 'mb-20'} flex-col ${isEven ? 'md:flex-row' : 'md:flex-row-reverse'}`}>
@@ -92,10 +106,10 @@ const ProcessStep = ({
             </p>
           </div>
           <h3 className="text-xl font-bold text-black dark:text-white">
-            {step.title}
+            {displayTitle}
           </h3>
         </div>
-        <p className="w-full lg:max-w-[470px]">{step.description}</p>
+        <p className="w-full lg:max-w-[470px]">{displayDescription}</p>
       </MotionDiv>
 
       {step.image && (
@@ -119,14 +133,14 @@ const ProcessStep = ({
           <div className="relative mx-auto aspect-[588/526.5] max-w-[500px]">
             <Image
               src={step.image}
-              alt={step.title}
+              alt={displayTitle}
               className="dark:hidden"
               fill
             />
             {step.imageDark && (
               <Image
                 src={step.imageDark}
-                alt={step.title}
+                alt={displayTitle}
                 className="hidden dark:block"
                 fill
               />

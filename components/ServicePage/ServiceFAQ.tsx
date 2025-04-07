@@ -3,14 +3,23 @@ import { ServiceFAQ as ServiceFAQType } from "@/types/servicePageData";
 import SectionHeader from "../Common/SectionHeader";
 import { useState } from "react";
 import { MotionDiv } from "@/app/libs/framer-utls";
+import { useLanguage } from "@/app/context/LanguageContext";
 
 interface ServiceFAQProps {
   title: string;
+  titleZh?: string;
   description: string;
+  descriptionZh?: string;
   faqs: ServiceFAQType[];
 }
 
-const ServiceFAQ = ({ title, description, faqs }: ServiceFAQProps) => {
+const ServiceFAQ = ({ title, titleZh, description, descriptionZh, faqs }: ServiceFAQProps) => {
+  const { language } = useLanguage();
+  
+  // Display content based on current language
+  const displayTitle = language === "zh" && titleZh ? titleZh : title;
+  const displayDescription = language === "zh" && descriptionZh ? descriptionZh : description;
+  
   return (
     <section className="overflow-hidden py-20 lg:py-25 xl:py-30">
       <div className="mx-auto max-w-c-1235 px-4 md:px-8 xl:px-0">
@@ -18,8 +27,8 @@ const ServiceFAQ = ({ title, description, faqs }: ServiceFAQProps) => {
         <SectionHeader
           headerInfo={{
             title: "FAQ",
-            subtitle: title,
-            description: description,
+            subtitle: displayTitle,
+            description: displayDescription,
           }}
         />
         {/* Section Title End */}
@@ -36,6 +45,11 @@ const ServiceFAQ = ({ title, description, faqs }: ServiceFAQProps) => {
 
 const SingleFAQ = ({ faq }: { faq: ServiceFAQType }) => {
   const [isOpen, setIsOpen] = useState(false);
+  const { language } = useLanguage();
+  
+  // Display content based on current language
+  const displayQuestion = language === "zh" && faq.questionZh ? faq.questionZh : faq.question;
+  const displayAnswer = language === "zh" && faq.answerZh ? faq.answerZh : faq.answer;
 
   return (
     <MotionDiv
@@ -59,7 +73,7 @@ const SingleFAQ = ({ faq }: { faq: ServiceFAQType }) => {
         onClick={() => setIsOpen(!isOpen)}
         className="flex w-full items-center justify-between p-4 text-left text-base font-medium text-black dark:text-white lg:px-6 lg:py-5"
       >
-        <span>{faq.question}</span>
+        <span>{displayQuestion}</span>
         <svg
           className={`fill-current ${isOpen ? "rotate-180" : ""}`}
           width="16"
@@ -81,7 +95,7 @@ const SingleFAQ = ({ faq }: { faq: ServiceFAQType }) => {
         }`}
       >
         <div className="border-t border-stroke p-4 dark:border-strokedark lg:px-6 lg:py-5">
-          <p className="text-base">{faq.answer}</p>
+          <p className="text-base">{displayAnswer}</p>
         </div>
       </div>
     </MotionDiv>

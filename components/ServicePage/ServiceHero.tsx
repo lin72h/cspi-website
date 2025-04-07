@@ -5,20 +5,34 @@ import { useLanguage } from "@/app/context/LanguageContext";
 
 interface ServiceHeroProps {
   title: string;
+  titleZh?: string;
   subtitle: string;
+  subtitleZh?: string;
   description: string;
+  heroDescriptionZh?: string;
   image: string;
   imageDark: string;
 }
 
-const ServiceHero = ({ title, subtitle, description, image, imageDark }: ServiceHeroProps) => {
+const ServiceHero = ({ 
+  title, 
+  titleZh, 
+  subtitle, 
+  subtitleZh, 
+  description, 
+  heroDescriptionZh, 
+  image, 
+  imageDark 
+}: ServiceHeroProps) => {
   const { language } = useLanguage();
   
   // Chinese description for consulting services
   const descriptionZh = "我们为自雇人士、合伙企业、房地产、信托和私人公司提供商业咨询和会计服务，包括簿记、年度和定期财务报表-损益表、资产负债表和经营预测-编制工资、PAYE、FBT、GST回报和商业计划";
   
-  // Display description based on current language
-  const displayDescription = language === "zh" ? descriptionZh : description;
+  // Display content based on current language
+  const displayTitle = language === "zh" && titleZh ? titleZh : title;
+  const displaySubtitle = language === "zh" && subtitleZh ? subtitleZh : subtitle;
+  const displayDescription = language === "zh" && heroDescriptionZh ? heroDescriptionZh : description;
   
   return (
     <section className="overflow-hidden pb-20 pt-35 md:pt-40 xl:pb-25 xl:pt-46">
@@ -42,10 +56,10 @@ const ServiceHero = ({ title, subtitle, description, image, imageDark }: Service
             className="animate_left md:w-1/2"
           >
             <h4 className="mb-4.5 text-lg font-medium text-black dark:text-white">
-              {subtitle}
+              {displaySubtitle}
             </h4>
             <h1 className="mb-5 text-3xl font-bold text-black dark:text-white xl:text-hero">
-              {title}
+              {displayTitle}
             </h1>
             <p className="mb-10 text-base leading-relaxed">
               {displayDescription}
