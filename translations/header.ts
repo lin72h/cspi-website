@@ -14,7 +14,7 @@ const header = {
     "Consulting Services": "咨询服务",
     "Tax and Compliance": "税务与合规",
     "Budgeting and Cashflows": "预算与现金流",
-    "Workshop": "研讨会",
+    "Workshop": "培训课程",
     "Resources": "资源",
     "Services": "服务",
     "Testimonials": "客户评价",
