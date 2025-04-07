@@ -1,6 +1,7 @@
 "use client";
 import Image from "next/image";
 import { MotionDiv } from "@/app/libs/framer-utls";
+import { useLanguage } from "@/app/context/LanguageContext";
 
 interface ServiceHeroProps {
   title: string;
@@ -11,6 +12,14 @@ interface ServiceHeroProps {
 }
 
 const ServiceHero = ({ title, subtitle, description, image, imageDark }: ServiceHeroProps) => {
+  const { language } = useLanguage();
+  
+  // Chinese description for consulting services
+  const descriptionZh = "我们为自雇人士、合伙企业、房地产、信托和私人公司提供商业咨询和会计服务，包括簿记、年度和定期财务报表-损益表、资产负债表和经营预测-编制工资、PAYE、FBT、GST回报和商业计划";
+  
+  // Display description based on current language
+  const displayDescription = language === "zh" ? descriptionZh : description;
+  
   return (
     <section className="overflow-hidden pb-20 pt-35 md:pt-40 xl:pb-25 xl:pt-46">
       <div className="mx-auto max-w-c-1390 px-4 md:px-8 2xl:px-0">
@@ -39,7 +48,7 @@ const ServiceHero = ({ title, subtitle, description, image, imageDark }: Service
               {title}
             </h1>
             <p className="mb-10 text-base leading-relaxed">
-              {description}
+              {displayDescription}
             </p>
             
             <div className="flex">

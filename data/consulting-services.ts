@@ -7,7 +7,7 @@ const consultingServicesData: ServicePageData = {
   subtitle: "Strategic Business Guidance",
   
   // Hero section
-  heroDescription: "We provide expert consulting services to help you organize your operations through a range of optimal business structures. Our team of chartered accountants brings decades of experience to deliver solutions that drive growth and streamline your business processes.",
+  heroDescription: "We provide business advice and accountancy services for the self-employed, partnerships, estates, trusts and private companies including bookkeeping, annual and periodic financial statements - profit and loss accounts, balance sheets and operating projections - preparation of wages, PAYE, FBT, GST returns and business plans.",
   heroImage: "/images/about/about-light-01.png",
   heroImageDark: "/images/about/about-dark-01.png",
   
