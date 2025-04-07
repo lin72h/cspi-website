@@ -7,11 +7,11 @@ const hero = {
     mainDescription2: "We help small to medium businesses minimize tax burdens, ensure compliance, and develop strategic financial plans for sustainable growth. Experience personalized service from our convenient central Auckland location."
   },
   zh: {
-    professionalAccountants: "✓ 专业特许会计师",
-    empoweringYour: "助力您的",
-    financialSuccess: "财务成功",
-    mainDescription1: "CSPI顾问是一家精品特许会计师事务所，在新西兰拥有超过三十年的经验。",
-    mainDescription2: "我们帮助中小型企业最小化税务负担，确保合规，并制定战略财务计划以实现可持续增长。在我们便捷的奥克兰中心位置体验个性化服务。"
+    professionalAccountants: "✓ 新西兰注册会计师",
+    empoweringYour: "专业, ",
+    financialSuccess: "高效, 诚信",
+    mainDescription1: "财务把关有我们，企业前行无忧愁。",
+    mainDescription2: "财务难题交给我，安心发展属于您。"
   }
 };
 
