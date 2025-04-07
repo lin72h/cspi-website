@@ -1,7 +1,11 @@
+"use client";
 import Image from "next/image";
 import Link from "next/link";
+import { useLanguage } from "@/app/context/LanguageContext";
 
 const Hero = () => {
+  const { t } = useLanguage();
+  
   return (
     <>
       <section className="overflow-hidden pb-12 pt-25 md:pt-30 xl:pb-16 xl:pt-36">
@@ -9,19 +13,19 @@ const Hero = () => {
           <div className="flex flex-col lg:flex-row lg:items-center lg:gap-6 xl:gap-12">
             <div className="md:w-1/2 lg:w-2/5">
               <h4 className="mb-3 text-lg font-medium text-black dark:text-white">
-                ✓ Professional Chartered Accountants
+                {t("professionalAccountants", "hero")}
               </h4>
               <h1 className="mb-4 pr-16 text-3xl font-bold text-black dark:text-white xl:text-hero">
-                Empowering Your
+                {t("empoweringYour", "hero")}
                 <span className="relative ml-2.5 inline-block before:absolute before:bottom-2.5 before:left-0 before:-z-1 before:h-3 before:w-full before:bg-titlebg dark:before:bg-titlebgdark">
-                  Financial Success
+                  {t("financialSuccess", "hero")}
                 </span>
               </h1>
               <p className="mb-3">
-                CSPI Consultants is a boutique firm of Chartered Accountants with over three decades of New Zealand based experience.
+                {t("mainDescription1", "hero")}
               </p>
               <p>
-                We help small to medium businesses minimize tax burdens, ensure compliance, and develop strategic financial plans for sustainable growth. Experience personalized service from our convenient central Auckland location.
+                {t("mainDescription2", "hero")}
               </p>
 
               <div className="mt-7 flex flex-wrap gap-4">
@@ -30,14 +34,14 @@ const Hero = () => {
                   aria-label="contact us button"
                   className="inline-block rounded-full bg-cspi px-7 py-2.5 text-white duration-300 ease-in-out hover:bg-cspiHover dark:bg-cspi dark:hover:bg-cspiHover"
                 >
-                  Contact Us
+                  {t("contactUs")}
                 </Link>
                 <Link
                   href={"/pricing"}
                   aria-label="services button"
                   className="inline-block rounded-full border border-cspi px-7 py-2.5 text-cspi duration-300 ease-in-out hover:bg-cspi hover:text-white dark:border-cspi dark:text-white dark:hover:bg-cspi"
                 >
-                  Our Services
+                  {t("ourServices")}
                 </Link>
               </div>
             </div>

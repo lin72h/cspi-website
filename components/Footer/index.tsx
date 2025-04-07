@@ -5,9 +5,11 @@ import { useState } from "react";
 import toast from "react-hot-toast";
 import axios from "axios";
 import { integrations, messages } from "@/integration.config";
+import { useLanguage } from "@/app/context/LanguageContext";
 
 const Footer = () => {
   const [email, setEmail] = useState("");
+  const { t } = useLanguage();
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -100,7 +102,7 @@ const Footer = () => {
                   className="animate_top"
                 >
                   <h4 className="mb-9 text-itemtitle2 font-medium text-black dark:text-white">
-                    Contact Us
+                    {t("contactInfo", "footer")}
                   </h4>
                   
                   <ul className="text-sm space-y-2">
@@ -110,8 +112,7 @@ const Footer = () => {
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
                       </svg>
                       <div>
-                        <p>110 Carlton Gore Road,</p>
-                        <p>New Market, Auckland, New Zealand</p>
+                        <p>{t("address", "footer")}</p>
                       </div>
                     </li>
                     
@@ -154,7 +155,7 @@ const Footer = () => {
                   className="animate_top"
                 >
                   <h4 className="mb-9 text-itemtitle2 font-medium text-black dark:text-white">
-                    Quick Links
+                    {t("quickLinks", "footer")}
                   </h4>
 
                   <ul>
@@ -163,7 +164,7 @@ const Footer = () => {
                         href="/consulting-services"
                         className="mb-3 inline-block hover:text-primary"
                       >
-                        Consulting Services
+                        {t("Consulting Services", "header")}
                       </a>
                     </li>
                     <li>
@@ -171,7 +172,7 @@ const Footer = () => {
                         href="/tax-and-compliance"
                         className="mb-3 inline-block hover:text-primary"
                       >
-                        Tax and Compliance
+                        {t("Tax and Compliance", "header")}
                       </a>
                     </li>
                     <li>
@@ -179,7 +180,7 @@ const Footer = () => {
                         href="/budgeting-cashflows"
                         className="mb-3 inline-block hover:text-primary"
                       >
-                        Budgeting and Cashflows
+                        {t("Budgeting and Cashflows", "header")}
                       </a>
                     </li>
                     <li>
@@ -187,7 +188,7 @@ const Footer = () => {
                         href="/workshop"
                         className="mb-3 inline-block hover:text-primary"
                       >
-                        Workshop
+                        {t("Workshop", "header")}
                       </a>
                     </li>
                   </ul>
@@ -212,7 +213,7 @@ const Footer = () => {
                   className="animate_top"
                 >
                   <h4 className="mb-9 text-itemtitle2 font-medium text-black dark:text-white">
-                    Resources
+                    {t("resources", "footer")}
                   </h4>
 
                   <ul>
@@ -221,7 +222,7 @@ const Footer = () => {
                         href="/pricing"
                         className="mb-3 inline-block hover:text-primary"
                       >
-                        Services
+                        {t("services", "footer")}
                       </a>
                     </li>
                     <li>
@@ -229,7 +230,7 @@ const Footer = () => {
                         href="/testimonials"
                         className="mb-3 inline-block hover:text-primary"
                       >
-                        Testimonials
+                        {t("testimonials", "footer")}
                       </a>
                     </li>
                     <li>
@@ -237,7 +238,7 @@ const Footer = () => {
                         href="/faq"
                         className="mb-3 inline-block hover:text-primary"
                       >
-                        FAQ
+                        {t("faq", "footer")}
                       </a>
                     </li>
                     <li>
@@ -245,7 +246,7 @@ const Footer = () => {
                         href="/support"
                         className="mb-3 inline-block hover:text-primary"
                       >
-                        Contact Us
+                        {t("contactUs", "footer")}
                       </a>
                     </li>
                   </ul>
@@ -270,10 +271,10 @@ const Footer = () => {
                   className="animate_top"
                 >
                   <h4 className="mb-9 text-itemtitle2 font-medium text-black dark:text-white">
-                    Newsletter
+                    {t("newsletter", "footer")}
                   </h4>
                   <p className="mb-4 w-[90%]">
-                    Subscribe to receive future updates
+                    {t("subscribeToReceiveFutureUpdates", "footer")}
                   </p>
 
                   <form onSubmit={handleSubmit}>
@@ -348,12 +349,12 @@ const Footer = () => {
                 </li>
                 <li>
                   <a href="#" className="hover:text-primary">
-                    Privacy Policy
+                    {t("privacyPolicy", "footer")}
                   </a>
                 </li>
                 <li>
                   <a href="#" className="hover:text-primary">
-                    Support
+                    {t("support", "footer")}
                   </a>
                 </li>
               </ul>
@@ -378,7 +379,7 @@ const Footer = () => {
               className="animate_top"
             >
               <p>
-                &copy; {new Date().getFullYear()} CSPI. All rights reserved
+                &copy; {new Date().getFullYear()} CSPI. {t("allRightsReserved", "footer")}
               </p>
             </MotionDiv>
 

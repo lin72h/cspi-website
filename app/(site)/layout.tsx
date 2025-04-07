@@ -11,6 +11,7 @@ const inter = Inter({ subsets: ["latin"] });
 import NextTopLoader from "nextjs-toploader";
 import AuthProvider from "../context/AuthContext";
 import ToasterContext from "../context/ToastContext";
+import { LanguageProvider } from "../context/LanguageContext";
 
 export default function RootLayout({
   children,
@@ -32,11 +33,13 @@ export default function RootLayout({
           defaultTheme="light"
         >
           <AuthProvider>
-            <Header />
-            <ToasterContext />
-            {children}
-            <Footer />
-            <ScrollToTop />
+            <LanguageProvider>
+              <Header />
+              <ToasterContext />
+              {children}
+              <Footer />
+              <ScrollToTop />
+            </LanguageProvider>
           </AuthProvider>
         </ThemeProvider>
       </body>

@@ -5,8 +5,10 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 import ThemeToggler from "./ThemeToggler";
+import LanguageToggler from "./LanguageToggler";
 import menuData from "./menuData";
 import GlobalSearchModal from "../GlobalSearch";
+import { useLanguage } from "@/app/context/LanguageContext";
 
 const Header = () => {
   const [navigationOpen, setNavigationOpen] = useState(false);
@@ -15,6 +17,7 @@ const Header = () => {
   const [searchModalOpen, setSearchModalOpen] = useState(false);
 
   const { data: session } = useSession();
+  const { t } = useLanguage();
 
   const pathUrl = usePathname();
 
@@ -67,7 +70,7 @@ const Header = () => {
                   href="/support"
                   className="flex items-center justify-center rounded-full bg-cspi px-4 py-2 text-sm text-white duration-300 ease-in-out hover:bg-cspiHover"
                 >
-                  Contact Us
+                  {t("contactUs")}
                 </Link>
               )}
               <button
@@ -130,7 +133,7 @@ const Header = () => {
                           onClick={() => setDropdownToggler(!dropdownToggler)}
                           className="flex cursor-pointer items-center justify-between gap-3 hover:text-primary"
                         >
-                          {menuItem.title}
+                          {t(menuItem.title, "header")}
                           <span>
                             <svg
                               className="h-3 w-3 cursor-pointer fill-waterloo group-hover:fill-primary"
@@ -149,7 +152,7 @@ const Header = () => {
                         >
                           {menuItem.submenu.map((item, key) => (
                             <li key={key} className="hover:text-primary">
-                              <Link href={item.path || "#"}>{item.title}</Link>
+                              <Link href={item.path || "#"}>{t(item.title, "header")}</Link>
                             </li>
                           ))}
                         </ul>
@@ -163,7 +166,7 @@ const Header = () => {
                             : "hover:text-primary"
                         }
                       >
-                        {menuItem.title}
+                        {t(menuItem.title, "header")}
                       </Link>
                     )}
                   </li>
@@ -171,7 +174,7 @@ const Header = () => {
               </ul>
             </nav>
 
-            <div className="ml-auto mt-7 flex items-center gap-6 xl:mt-0">
+            <div className="ml-auto mt-7 flex items-center gap-4 xl:mt-0">
               <button
                 onClick={() => setSearchModalOpen(true)}
                 className="hidden h-[38px] w-[38px] items-center justify-center rounded-full bg-white text-waterloo dark:bg-black sm:flex"
@@ -202,6 +205,9 @@ const Header = () => {
                 </svg>
               </button>
 
+              <LanguageToggler />
+              <ThemeToggler />
+
               {session ? (
                 <>
                   <p>{session?.user?.name}</p>
@@ -210,7 +216,7 @@ const Header = () => {
                     onClick={() => signOut()}
                     className="flex items-center justify-center rounded-full bg-primary px-7.5 py-2.5 text-regular text-white duration-300 ease-in-out hover:bg-primaryho"
                   >
-                    Sign Out
+                    {t("signOut")}
                   </button>
                 </>
               ) : (
@@ -219,7 +225,7 @@ const Header = () => {
                     href="/support"
                     className="hidden xl:flex items-center justify-center rounded-full bg-cspi px-7.5 py-2.5 text-regular text-white duration-300 ease-in-out hover:bg-cspiHover"
                   >
-                    Contact Us
+                    {t("contactUs")}
                   </Link>
                 </>
               )}
