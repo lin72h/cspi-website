@@ -60,7 +60,7 @@ const Footer = () => {
                 whileInView="visible"
                 transition={{ duration: 1, delay: 0.5 }}
                 viewport={{ once: true }}
-                className="animate_top w-1/2 lg:w-1/4"
+                className="animate_top w-1/2 lg:w-1/6 mr-0 lg:mr-4"
               >
                 <a href="/" className="relative">
                   <Image
@@ -78,32 +78,63 @@ const Footer = () => {
                     className="hidden dark:block"
                   />
                 </a>
-
-                <p className="mb-10 mt-5">
-                  CSPI is a leading technology company based in Auckland, New Zealand, providing innovative solutions since 2020.
-                </p>
-
-                <h4 className="mb-5 text-itemtitle2 font-medium text-black dark:text-white">
-                  Contact Us
-                </h4>
-                
-                <div className="text-sm">
-                  <p className="mb-2 font-medium text-black dark:text-white">Our Location</p>
-                  <p className="mb-4">110 Carlton Gore Road, New Market, Auckland, New Zealand</p>
-                  
-                  <p className="mb-2 font-medium text-black dark:text-white">Email Address</p>
-                  <a href="mailto:info@cspi.co.nz" className="mb-4 inline-block hover:text-primary">
-                    info@cspi.co.nz
-                  </a>
-                  
-                  <p className="mb-2 font-medium text-black dark:text-white">Phone Number</p>
-                  <a href="tel:+64290403669" className="inline-block hover:text-primary">
-                    +64 29 04003669
-                  </a>
-                </div>
               </MotionDiv>
 
-              <div className="flex w-full flex-col gap-8 md:flex-row md:justify-between md:gap-0 lg:w-2/3 xl:w-7/12">
+              <div className="flex w-full flex-col gap-8 md:flex-row md:justify-between md:gap-0 lg:w-3/4 xl:w-4/5">
+                <MotionDiv
+                  variants={{
+                    hidden: {
+                      opacity: 0,
+                      y: -20,
+                    },
+
+                    visible: {
+                      opacity: 1,
+                      y: 0,
+                    },
+                  }}
+                  initial="hidden"
+                  whileInView="visible"
+                  transition={{ duration: 1, delay: 0.1 }}
+                  viewport={{ once: true }}
+                  className="animate_top"
+                >
+                  <h4 className="mb-9 text-itemtitle2 font-medium text-black dark:text-white">
+                    Contact Us
+                  </h4>
+                  
+                  <div className="text-sm space-y-2">
+                    <div className="flex items-start">
+                      <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 mt-0.5 mr-2 text-gray-600 dark:text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                      </svg>
+                      <div>
+                        <p>110 Carlton Gore Road,</p>
+                        <p>New Market, Auckland, New Zealand</p>
+                      </div>
+                    </div>
+                    
+                    <div className="flex items-center">
+                      <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 mr-2 text-gray-600 dark:text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                      </svg>
+                      <a href="mailto:info@cspi.co.nz" className="inline-block hover:text-primary">
+                        info@cspi.co.nz
+                      </a>
+                    </div>
+                    
+                    <div className="flex items-center">
+                      <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 mr-2 text-gray-600 dark:text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                      </svg>
+                      <a href="tel:+64290403669" className="inline-block hover:text-primary">
+                        +64 29 04003669
+                      </a>
+                    </div>
+                  </div>
+                </MotionDiv>
+
                 <MotionDiv
                   variants={{
                     hidden: {
