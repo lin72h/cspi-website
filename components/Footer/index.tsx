@@ -172,21 +172,37 @@ const Footer = () => {
                   className="animate_top"
                 >
                   <h4 className="mb-9 text-itemtitle2 font-medium text-black dark:text-white">
-                    Support
+                    Resources
                   </h4>
 
                   <ul>
                     <li>
                       <a
-                        href="#"
+                        href="/pricing"
                         className="mb-3 inline-block hover:text-primary"
                       >
-                        Company
+                        Services
                       </a>
                     </li>
                     <li>
                       <a
-                        href="#"
+                        href="/testimonials"
+                        className="mb-3 inline-block hover:text-primary"
+                      >
+                        Testimonials
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="/faq"
+                        className="mb-3 inline-block hover:text-primary"
+                      >
+                        FAQ
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="/support"
                         className="mb-3 inline-block hover:text-primary"
                       >
                         Contact Us
