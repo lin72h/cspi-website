@@ -120,34 +120,34 @@ const Footer = () => {
                   <ul>
                     <li>
                       <a
-                        href="#"
+                        href="/consulting-services"
                         className="mb-3 inline-block hover:text-primary"
                       >
-                        Home
+                        Consulting Services
                       </a>
                     </li>
                     <li>
                       <a
-                        href="#"
+                        href="/tax-and-compliance"
                         className="mb-3 inline-block hover:text-primary"
                       >
-                        Product
+                        Tax and Compliance
                       </a>
                     </li>
                     <li>
                       <a
-                        href="#"
+                        href="/budgeting-cashflows"
                         className="mb-3 inline-block hover:text-primary"
                       >
-                        Careers
+                        Budgeting and Cashflows
                       </a>
                     </li>
                     <li>
                       <a
-                        href="#"
+                        href="/workshop"
                         className="mb-3 inline-block hover:text-primary"
                       >
-                        Pricing
+                        Workshop
                       </a>
                     </li>
                   </ul>
@@ -182,22 +182,6 @@ const Footer = () => {
                         className="mb-3 inline-block hover:text-primary"
                       >
                         Company
-                      </a>
-                    </li>
-                    <li>
-                      <a
-                        href="#"
-                        className="mb-3 inline-block hover:text-primary"
-                      >
-                        Press media
-                      </a>
-                    </li>
-                    <li>
-                      <a
-                        href="#"
-                        className="mb-3 inline-block hover:text-primary"
-                      >
-                        Our Blog
                       </a>
                     </li>
                     <li>
