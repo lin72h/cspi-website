@@ -70,7 +70,7 @@ const ServiceHero = ({
                 href="/support"
                 className="inline-flex items-center gap-2.5 rounded-full bg-cspi px-6 py-3 font-medium text-white duration-300 ease-in-out hover:bg-cspiHover dark:border-cspi dark:bg-cspi dark:hover:bg-cspiHover"
               >
-                Book a Consultation
+                {language === "zh" ? "预约咨询" : "Book a Consultation"}
                 <span className="pl-2.5">
                   <svg
                     width="14"
