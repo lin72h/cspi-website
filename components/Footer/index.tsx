@@ -83,15 +83,24 @@ const Footer = () => {
                   CSPI is a leading technology company based in Auckland, New Zealand, providing innovative solutions since 2020.
                 </p>
 
-                <p className="mb-1.5 text-sectiontitle uppercase tracking-[5px]">
-                  contact
-                </p>
-                <a
-                  href="mailto:info@cspi.co.nz"
-                  className="text-itemtitle font-medium text-black dark:text-white"
-                >
-                  info@cspi.co.nz
-                </a>
+                <h4 className="mb-5 text-itemtitle2 font-medium text-black dark:text-white">
+                  Contact Us
+                </h4>
+                
+                <div className="text-sm">
+                  <p className="mb-2 font-medium text-black dark:text-white">Our Location</p>
+                  <p className="mb-4">110 Carlton Gore Road, New Market, Auckland, New Zealand</p>
+                  
+                  <p className="mb-2 font-medium text-black dark:text-white">Email Address</p>
+                  <a href="mailto:info@cspi.co.nz" className="mb-4 inline-block hover:text-primary">
+                    info@cspi.co.nz
+                  </a>
+                  
+                  <p className="mb-2 font-medium text-black dark:text-white">Phone Number</p>
+                  <a href="tel:+64290403669" className="inline-block hover:text-primary">
+                    +64 29 04003669
+                  </a>
+                </div>
               </MotionDiv>
 
               <div className="flex w-full flex-col gap-8 md:flex-row md:justify-between md:gap-0 lg:w-2/3 xl:w-7/12">
