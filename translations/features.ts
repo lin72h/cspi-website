@@ -56,7 +56,7 @@ const features = {
     initialConsultationFull: "初步咨询与评估",
     initialConsultationDesc1: "我们的合作始于全面的咨询，以了解您当前的财务状况、业务目标和您面临的具体挑战。",
     initialConsultationDesc2: "我们评估您现有的财务系统并确定改进机会，为您的企业财务健康创建量身定制的路线图。",
-    strategyDevelopment: "战略制定",
+    strategyDevelopment: "我们的目标",
     strategyDevelopmentFull: "战略制定与实施",
     strategyDevelopmentDesc1: "我们制定全面的财务战略，旨在优化您的税务状况，同时确保完全符合新西兰法规。",
     strategyDevelopmentDesc2: "我们的团队为您的会计需求提供实用解决方案，包括建立高效的簿记系统、税务规划和建立清晰的财务报告结构。",
