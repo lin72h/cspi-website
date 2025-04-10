@@ -56,7 +56,7 @@ const taxAndComplianceData: ServicePageData = {
       id: 5,
       title: "Tax Planning Strategies",
       titleZh: "税务规划策略",
-      description: "Proactive tax planning to legally minimize your tax obligations through structure optimization, timing strategies, and available incentives.",
+      description: "Proactive tax planning to legally minimize your tax obligations through structure optimization, timing strategies, and available incentives. We develop reasonable tax planning solutions based on your financial situation and business objectives to help you legally reduce your tax burden.",
       descriptionZh: "税务筹划：根据客户的财务状况和经营目标，为客户制定合理的税务筹划方案，帮助客户合法降低税负。我们通过结构优化、时机策略和可用激励措施，积极进行税务规划，合法最小化您的税务义务。",
       icon: "/images/icon/icon-05.svg"
     },
@@ -64,7 +64,7 @@ const taxAndComplianceData: ServicePageData = {
       id: 6,
       title: "IRD Audit Support",
       titleZh: "IRD审计支持",
-      description: "Expert representation and support during IRD audits or inquiries, managing the process to minimize stress and potential liability.",
+      description: "Expert representation and support during IRD audits or inquiries. When clients face tax audits, we communicate with tax authorities on their behalf, provide relevant financial materials and explanations, assist clients in responding to audits, ensure smooth audit processes, and protect clients' legitimate rights while managing the process to minimize stress and potential liability.",
       descriptionZh: "税务审计协助：当客户面临税务局的税务审计时，我们会代表客户与税务局沟通，提供相关的财务资料和解释，协助客户应对审计，确保审计过程顺利进行，维护客户的合法权益。我们提供专业代表和支持，管理流程以最大限度地减少压力和潜在责任。",
       icon: "/images/icon/icon-06.svg"
     },
@@ -72,7 +72,7 @@ const taxAndComplianceData: ServicePageData = {
       id: 7,
       title: "Tax Debt Relief",
       titleZh: "税务债务减免",
-      description: "Assistance with tax debt issues, including negotiation with IRD for potential penalty and interest reductions.",
+      description: "Assistance with tax debt issues, including negotiation with IRD for potential penalty and interest reductions. If clients have tax debt problems, we negotiate with tax authorities based on the client's specific circumstances, such as financial difficulties or force majeure factors, to seek relief from part or all of the penalties and interest, and even negotiate debt repayment methods and terms.",
       descriptionZh: "税债减免：如果客户存在税务债务问题，我们会与税务局进行谈判，根据客户的具体情况，如财务困难、不可抗力因素等，争取减免部分或全部的罚款和利息，甚至协商债务的偿还方式和期限。",
       icon: "/images/icon/icon-07.svg"
     },
@@ -80,7 +80,7 @@ const taxAndComplianceData: ServicePageData = {
       id: 8,
       title: "Policy Interpretation",
       titleZh: "政策解读",
-      description: "Interpretation of changing tax regulations and how they impact your business.",
+      description: "Interpretation of changing tax regulations and how they impact your business. New Zealand tax regulations frequently change, and we stay current with regulatory developments to interpret new policies for clients, explain their impact on your business, and provide coping strategies.",
       descriptionZh: "政策解读：新西兰的税务法规经常变化，我们会及时关注法规动态，为客户解读新政策对其业务的影响，并提供应对建议。",
       icon: "/images/icon/icon-08.svg"
     }
@@ -132,7 +132,7 @@ const taxAndComplianceData: ServicePageData = {
       id: 5,
       title: "Financial Statement Preparation",
       titleZh: "财务报表编制",
-      description: "We prepare accurate financial statements that serve as the foundation for tax reporting.",
+      description: "We prepare accurate financial statements that serve as the foundation for tax reporting. Although not strictly a tax service, accurate financial statements are the basis for tax reporting. We prepare quarterly, semi-annual, and year-end financial statements based on your financial data to provide a basis for tax calculations and filing.",
       descriptionZh: "财务报表编制：虽然不属于严格意义上的税务服务，但准确的财务报表是税务申报的基础。我们会根据客户的财务数据，编制季度/半年度/年终财务报表，为税务计算和申报提供依据。",
       image: "/images/features/features-light-01.png",
       imageDark: "/images/features/features-dark-01.svg"
@@ -141,7 +141,7 @@ const taxAndComplianceData: ServicePageData = {
       id: 6,
       title: "Accounting Software Training",
       titleZh: "会计软件培训",
-      description: "We help clients master accounting software to better record financial data and improve financial management efficiency.",
+      description: "We help clients master accounting software to better record financial data and improve financial management efficiency. This training enables you to better maintain your financial records and accurately perform tax-related operations.",
       descriptionZh: "会计软件培训：帮助客户掌握会计软件的使用方法，以便客户能够更好地记录财务数据，提高财务管理效率，同时也有助于准确进行税务相关的操作。",
       image: "/images/features/features-light-01.png",
       imageDark: "/images/features/features-dark-01.svg"
