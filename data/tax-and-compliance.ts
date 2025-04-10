@@ -57,7 +57,7 @@ const taxAndComplianceData: ServicePageData = {
       title: "Tax Planning Strategies",
       titleZh: "税务规划策略",
       description: "Proactive tax planning to legally minimize your tax obligations through structure optimization, timing strategies, and available incentives.",
-      descriptionZh: "通过结构优化、时机策略和可用激励措施，积极进行税务规划，合法最小化您的税务义务。",
+      descriptionZh: "税务筹划：根据客户的财务状况和经营目标，为客户制定合理的税务筹划方案，帮助客户合法降低税负。我们通过结构优化、时机策略和可用激励措施，积极进行税务规划，合法最小化您的税务义务。",
       icon: "/images/icon/icon-05.svg"
     },
     {
@@ -65,8 +65,24 @@ const taxAndComplianceData: ServicePageData = {
       title: "IRD Audit Support",
       titleZh: "IRD审计支持",
       description: "Expert representation and support during IRD audits or inquiries, managing the process to minimize stress and potential liability.",
-      descriptionZh: "在IRD审计或查询期间提供专业代表和支持，管理流程以最大限度地减少压力和潜在责任。",
+      descriptionZh: "税务审计协助：当客户面临税务局的税务审计时，我们会代表客户与税务局沟通，提供相关的财务资料和解释，协助客户应对审计，确保审计过程顺利进行，维护客户的合法权益。我们提供专业代表和支持，管理流程以最大限度地减少压力和潜在责任。",
       icon: "/images/icon/icon-06.svg"
+    },
+    {
+      id: 7,
+      title: "Tax Debt Relief",
+      titleZh: "税务债务减免",
+      description: "Assistance with tax debt issues, including negotiation with IRD for potential penalty and interest reductions.",
+      descriptionZh: "税债减免：如果客户存在税务债务问题，我们会与税务局进行谈判，根据客户的具体情况，如财务困难、不可抗力因素等，争取减免部分或全部的罚款和利息，甚至协商债务的偿还方式和期限。",
+      icon: "/images/icon/icon-07.svg"
+    },
+    {
+      id: 8,
+      title: "Policy Interpretation",
+      titleZh: "政策解读",
+      description: "Interpretation of changing tax regulations and how they impact your business.",
+      descriptionZh: "政策解读：新西兰的税务法规经常变化，我们会及时关注法规动态，为客户解读新政策对其业务的影响，并提供应对建议。",
+      icon: "/images/icon/icon-08.svg"
     }
   ],
   
@@ -109,6 +125,24 @@ const taxAndComplianceData: ServicePageData = {
       titleZh: "战略审查和调整",
       description: "We conduct regular reviews of your tax position to identify opportunities for legitimate tax minimization. This includes assessing changing tax laws, business circumstances, and planning for major transactions with tax implications.",
       descriptionZh: "我们定期审查您的税务状况，以确定合法最小化税务的机会。这包括评估不断变化的税法、商业环境，以及规划具有税务影响的重大交易。",
+      image: "/images/features/features-light-01.png",
+      imageDark: "/images/features/features-dark-01.svg"
+    },
+    {
+      id: 5,
+      title: "Financial Statement Preparation",
+      titleZh: "财务报表编制",
+      description: "We prepare accurate financial statements that serve as the foundation for tax reporting.",
+      descriptionZh: "财务报表编制：虽然不属于严格意义上的税务服务，但准确的财务报表是税务申报的基础。我们会根据客户的财务数据，编制季度/半年度/年终财务报表，为税务计算和申报提供依据。",
+      image: "/images/features/features-light-01.png",
+      imageDark: "/images/features/features-dark-01.svg"
+    },
+    {
+      id: 6,
+      title: "Accounting Software Training",
+      titleZh: "会计软件培训",
+      description: "We help clients master accounting software to better record financial data and improve financial management efficiency.",
+      descriptionZh: "会计软件培训：帮助客户掌握会计软件的使用方法，以便客户能够更好地记录财务数据，提高财务管理效率，同时也有助于准确进行税务相关的操作。",
       image: "/images/features/features-light-01.png",
       imageDark: "/images/features/features-dark-01.svg"
     }
