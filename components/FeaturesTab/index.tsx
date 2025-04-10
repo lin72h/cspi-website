@@ -7,6 +7,7 @@ import IndustrySectorsGrid from "./IndustrySectorsGrid";
 import getIndustrySectorsData from "./industrySectorsData";
 import { MotionDiv } from "@/app/libs/framer-utls";
 import { useLanguage } from "@/app/context/LanguageContext";
+import GoalsContent from "./GoalsContent";
 
 const FeaturesTab = () => {
   const [currentTab, setCurrentTab] = useState("tabOne");
@@ -135,19 +136,18 @@ const FeaturesTab = () => {
             viewport={{ once: true }}
             className="animate_top mx-auto max-w-c-1154"
           >
-            {currentTab === "tabOne" ? (
+            {currentTab === "tabOne" && (
               <IndustrySectorsGrid sectors={industrySectorsData} />
-            ) : (
-              featuresTabData
-                .filter(feature => feature.id !== "tabOne")
-                .map((feature, key) => (
-                  <div
-                    className={feature.id === currentTab ? "block" : "hidden"}
-                    key={key}
-                  >
-                    <FeaturesTabItem featureTab={feature} />
-                  </div>
-                ))
+            )}
+            
+            {currentTab === "tabTwo" && (
+              <GoalsContent />
+            )}
+            
+            {currentTab === "tabThree" && (
+              <FeaturesTabItem 
+                featureTab={featuresTabData.find(feature => feature.id === "tabThree") || featuresTabData[2]} 
+              />
             )}
           </MotionDiv>
           {/* <!-- Tab Content End --> */}
