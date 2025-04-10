@@ -3,6 +3,8 @@ import Image from "next/image";
 import { useState } from "react";
 import FeaturesTabItem from "./FeaturesTabItem";
 import getFeatureTabData from "./featuresTabData";
+import IndustrySectorsGrid from "./IndustrySectorsGrid";
+import getIndustrySectorsData from "./industrySectorsData";
 import { MotionDiv } from "@/app/libs/framer-utls";
 import { useLanguage } from "@/app/context/LanguageContext";
 
@@ -12,6 +14,8 @@ const FeaturesTab = () => {
   
   // Get the feature data with translations
   const featuresTabData = getFeatureTabData(t);
+  // Get the industry sectors data
+  const industrySectorsData = getIndustrySectorsData(t);
 
   return (
     <>
@@ -131,14 +135,20 @@ const FeaturesTab = () => {
             viewport={{ once: true }}
             className="animate_top mx-auto max-w-c-1154"
           >
-            {featuresTabData.map((feature, key) => (
-              <div
-                className={feature.id === currentTab ? "block" : "hidden"}
-                key={key}
-              >
-                <FeaturesTabItem featureTab={feature} />
-              </div>
-            ))}
+            {currentTab === "tabOne" ? (
+              <IndustrySectorsGrid sectors={industrySectorsData} />
+            ) : (
+              featuresTabData
+                .filter(feature => feature.id !== "tabOne")
+                .map((feature, key) => (
+                  <div
+                    className={feature.id === currentTab ? "block" : "hidden"}
+                    key={key}
+                  >
+                    <FeaturesTabItem featureTab={feature} />
+                  </div>
+                ))
+            )}
           </MotionDiv>
           {/* <!-- Tab Content End --> */}
         </div>

@@ -14,7 +14,7 @@ const features = {
     budgetingServices: "Budgeting Services",
     budgetingServicesDesc: "Detailed budget planning and cash flow management for financial stability.",
     // Feature tabs translations
-    initialConsultation: "Initial Consultation",
+    initialConsultation: "Our Clients",
     initialConsultationFull: "Initial Consultation & Assessment",
     initialConsultationDesc1: "Our relationship begins with a thorough consultation to understand your current financial position, business goals, and specific challenges you're facing.",
     initialConsultationDesc2: "We evaluate your existing financial systems and identify opportunities for improvement, creating a tailored roadmap for your business's financial health.",
@@ -25,7 +25,17 @@ const features = {
     ongoingSupport: "Ongoing Support",
     ongoingSupportFull: "Ongoing Support & Strategic Reviews",
     ongoingSupportDesc1: "We don't just set and forget - we provide continuous support to address your questions and adapt to changing business circumstances.",
-    ongoingSupportDesc2: "Regular strategic reviews help track progress against financial goals, identify new opportunities, and make necessary adjustments to keep your business financially healthy and compliant."
+    ongoingSupportDesc2: "Regular strategic reviews help track progress against financial goals, identify new opportunities, and make necessary adjustments to keep your business financially healthy and compliant.",
+    // Industry sectors content
+    industrySectorsHeader: "Our Clients Span Many Industry Sectors",
+    agribusiness: "Agribusiness",
+    construction: "Construction",
+    financialServices: "Financial Services",
+    transportation: "Transportation",
+    foodAndRetail: "Food & Retail",
+    infrastructure: "Infrastructure, Assets & Places",
+    consultingAndTraining: "Consulting & Training",
+    internationalTrade: "International Trade"
   },
   zh: {
     ourServices: "我们的服务",
@@ -53,7 +63,17 @@ const features = {
     ongoingSupport: "持续支持",
     ongoingSupportFull: "持续支持与战略审查",
     ongoingSupportDesc1: "我们不只是设置后就忘记 - 我们提供持续的支持，解答您的问题并适应不断变化的业务环境。",
-    ongoingSupportDesc2: "定期的战略审查有助于跟踪财务目标的进展，识别新机会，并做出必要的调整，保持您的企业财务健康和合规。"
+    ongoingSupportDesc2: "定期的战略审查有助于跟踪财务目标的进展，识别新机会，并做出必要的调整，保持您的企业财务健康和合规。",
+    // Industry sectors content
+    industrySectorsHeader: "我们的客户涵盖众多的行业领域",
+    agribusiness: "农业企业",
+    construction: "建设",
+    financialServices: "金融服务",
+    transportation: "交通运输",
+    foodAndRetail: "餐饮、零售",
+    infrastructure: "基础设施、资产和场所",
+    consultingAndTraining: "咨询和培训",
+    internationalTrade: "国际贸易"
   }
 };
 
