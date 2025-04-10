@@ -30,6 +30,14 @@ const taxAndComplianceData: ServicePageData = {
     },
     {
       id: 2,
+      title: "IRD Audit Support",
+      titleZh: "IRD审计支持",
+      description: "Expert representation and support during IRD audits or inquiries. When clients face tax audits, we communicate with tax authorities on their behalf, provide relevant financial materials and explanations, assist clients in responding to audits, ensure smooth audit processes, and protect clients' legitimate rights while managing the process to minimize stress and potential liability.",
+      descriptionZh: "税务审计协助：当客户面临税务局的税务审计时，我们会代表客户与税务局沟通，提供相关的财务资料和解释，协助客户应对审计，确保审计过程顺利进行，维护客户的合法权益。我们提供专业代表和支持，管理流程以最大限度地减少压力和潜在责任。",
+      icon: "/images/icon/icon-06.svg"
+    },
+    {
+      id: 3,
       title: "GST Management",
       titleZh: "GST管理",
       description: "Complete Goods and Services Tax management including registration, filing returns, handling special transactions, and ensuring accurate reporting.",
@@ -37,7 +45,7 @@ const taxAndComplianceData: ServicePageData = {
       icon: "/images/icon/icon-02.svg"
     },
     {
-      id: 3,
+      id: 4,
       title: "Fringe Benefit Tax Compliance",
       titleZh: "附加福利税合规",
       description: "Management of Fringe Benefit Tax obligations related to employee benefits, with strategies to minimize FBT exposure while maintaining employee satisfaction.",
@@ -45,7 +53,7 @@ const taxAndComplianceData: ServicePageData = {
       icon: "/images/icon/icon-03.svg"
     },
     {
-      id: 4,
+      id: 5,
       title: "Payroll Administration",
       titleZh: "工资管理",
       description: "Comprehensive payroll services including PAYE, KiwiSaver, ACC levies, and leave management, ensuring compliance with employment tax regulations.",
@@ -53,20 +61,12 @@ const taxAndComplianceData: ServicePageData = {
       icon: "/images/icon/icon-04.svg"
     },
     {
-      id: 5,
+      id: 6,
       title: "Tax Planning Strategies",
       titleZh: "税务规划策略",
       description: "Proactive tax planning to legally minimize your tax obligations through structure optimization, timing strategies, and available incentives. We develop reasonable tax planning solutions based on your financial situation and business objectives to help you legally reduce your tax burden.",
       descriptionZh: "税务筹划：根据客户的财务状况和经营目标，为客户制定合理的税务筹划方案，帮助客户合法降低税负。我们通过结构优化、时机策略和可用激励措施，积极进行税务规划，合法最小化您的税务义务。",
       icon: "/images/icon/icon-05.svg"
-    },
-    {
-      id: 6,
-      title: "IRD Audit Support",
-      titleZh: "IRD审计支持",
-      description: "Expert representation and support during IRD audits or inquiries. When clients face tax audits, we communicate with tax authorities on their behalf, provide relevant financial materials and explanations, assist clients in responding to audits, ensure smooth audit processes, and protect clients' legitimate rights while managing the process to minimize stress and potential liability.",
-      descriptionZh: "税务审计协助：当客户面临税务局的税务审计时，我们会代表客户与税务局沟通，提供相关的财务资料和解释，协助客户应对审计，确保审计过程顺利进行，维护客户的合法权益。我们提供专业代表和支持，管理流程以最大限度地减少压力和潜在责任。",
-      icon: "/images/icon/icon-06.svg"
     },
     {
       id: 7,
