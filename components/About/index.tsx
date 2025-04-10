@@ -2,8 +2,32 @@
 
 import Image from "next/image";
 import { MotionDiv } from "@/app/libs/framer-utls";
+import { useLanguage } from "@/app/context/LanguageContext";
 
 const About = () => {
+  const { language, t } = useLanguage();
+
+  const renderDescription = () => {
+    if (language === "zh") {
+      const items = t("commitmentDescription", "about").split("\n");
+      return (
+        <>
+          {items.map((item, index) => (
+            <p key={index} className={index > 0 ? "mt-3" : ""}>
+              {item}
+            </p>
+          ))}
+        </>
+      );
+    }
+    
+    return (
+      <p>
+        {t("commitmentDescription", "about")}
+      </p>
+    );
+  };
+
   return (
     <>
       {/* <!-- ===== About Two Start ===== --> */}
@@ -29,26 +53,30 @@ const About = () => {
               className="animate_left md:w-1/2"
             >
               <h4 className="font-medium uppercase text-black dark:text-white">
-                Our Commitment to Excellence
+                {t("commitmentTitle", "about")}
               </h4>
               <h2 className="relative mb-6 text-3xl font-bold text-black dark:text-white xl:text-hero">
-                Building Financial
-                <span className="relative ml-2.5 inline-block before:absolute before:bottom-2.5 before:left-0 before:-z-1 before:h-3 before:w-full before:bg-titlebg2 dark:before:bg-titlebgdark">
-                  Clarity
-                </span>
+                {language === "en" ? (
+                  <>
+                    Building Financial
+                    <span className="relative ml-2.5 inline-block before:absolute before:bottom-2.5 before:left-0 before:-z-1 before:h-3 before:w-full before:bg-titlebg2 dark:before:bg-titlebgdark">
+                      Clarity
+                    </span>
+                  </>
+                ) : (
+                  t("commitmentSubtitle", "about")
+                )}
               </h2>
-              <p>
-                At CSPI Consultants, we believe in empowering our clients through financial clarity. 
-                We work closely with small to medium businesses to develop comprehensive financial strategies 
-                that support sustainable growth and long-term success.
-              </p>
+              <div className="mb-6">
+                {renderDescription()}
+              </div>
               <div>
                 <a
                   href="/support"
                   className="group mt-7.5 inline-flex items-center gap-2.5 text-black hover:text-primary dark:text-white dark:hover:text-primary"
                 >
                   <span className="duration-300 group-hover:pr-2">
-                    Contact Us
+                    {language === "en" ? "Contact Us" : "联系我们"}
                   </span>
 
                   <svg

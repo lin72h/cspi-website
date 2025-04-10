@@ -8,7 +8,10 @@ const about = {
     yearsExperience: "Years Experience",
     projectsCompleted: "Projects Completed",
     happyClients: "Happy Clients",
-    teamMembers: "Team Members"
+    teamMembers: "Team Members",
+    commitmentTitle: "Our Commitment to Excellence",
+    commitmentSubtitle: "Building Financial Clarity",
+    commitmentDescription: "At CSPI Consultants, we believe in empowering our clients through financial clarity. We work closely with small to medium businesses to develop comprehensive financial strategies that support sustainable growth and long-term success."
   },
   zh: {
     trustedBy: "受到信任",
@@ -19,7 +22,10 @@ const about = {
     yearsExperience: "年经验",
     projectsCompleted: "项目完成",
     happyClients: "满意客户",
-    teamMembers: "团队成员"
+    teamMembers: "团队成员",
+    commitmentTitle: "我们对您的承诺",
+    commitmentSubtitle: "我们对您的承诺",
+    commitmentDescription: "我们有信心为您提供符合您期望的服务。考虑到这一点，我们对您的服务有一些承诺，其中包括：\n·对您和您的企业的所有个人、业务、税务和财务信息进行严格保密.\n·提供友好、礼貌和出色的服务。你将受到尊重，而不是理所当然。\n·建议您何时完成工作并提交给您。讨论您的业务进展情况，并向您提供任何建议"
   }
 };
 
