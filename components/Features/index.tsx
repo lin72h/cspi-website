@@ -3,8 +3,11 @@ import React from "react";
 import featuresData from "./featuresData";
 import SingleFeature from "./SingleFeature";
 import SectionHeader from "../Common/SectionHeader";
+import { useLanguage } from "@/app/context/LanguageContext";
 
 const Feature = () => {
+  const { language } = useLanguage();
+  
   return (
     <>
       {/* <!-- ===== Features Start ===== --> */}
@@ -13,9 +16,11 @@ const Feature = () => {
           {/* <!-- Section Title Start --> */}
           <SectionHeader
             headerInfo={{
-              title: "SERVICES",
-              subtitle: "Services Offering",
-              description: `Our comprehensive range of accounting and financial services designed to support your business needs and drive your success.`,
+              title: language === "zh" ? "服务" : "SERVICES",
+              subtitle: language === "zh" ? "服务项目" : "Services Offering",
+              description: language === "zh" 
+                ? "我们全面的会计和财务服务旨在支持您的业务需求并推动您的成功。" 
+                : "Our comprehensive range of accounting and financial services designed to support your business needs and drive your success.",
             }}
           />
           {/* <!-- Section Title End --> */}
