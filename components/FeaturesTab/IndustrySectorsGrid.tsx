@@ -53,9 +53,11 @@ const IndustrySectorsGrid = ({
                 <p className="text-lg font-bold text-black dark:text-white">
                   {current}
                 </p>
-                <p className="text-sm text-body-color">
-                  {other}
-                </p>
+                {language === 'zh' && (
+                  <p className="text-sm text-body-color">
+                    {other}
+                  </p>
+                )}
               </div>
             </MotionDiv>
           );
