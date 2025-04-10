@@ -42,7 +42,7 @@ const features = {
     budgetingServices: "预算服务",
     budgetingServicesDesc: "详细的预算规划和现金流管理，确保财务稳定。",
     // Feature tabs translations
-    initialConsultation: "初步咨询",
+    initialConsultation: "我们的客户",
     initialConsultationFull: "初步咨询与评估",
     initialConsultationDesc1: "我们的合作始于全面的咨询，以了解您当前的财务状况、业务目标和您面临的具体挑战。",
     initialConsultationDesc2: "我们评估您现有的财务系统并确定改进机会，为您的企业财务健康创建量身定制的路线图。",
