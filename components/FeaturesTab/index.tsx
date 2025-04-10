@@ -2,11 +2,16 @@
 import Image from "next/image";
 import { useState } from "react";
 import FeaturesTabItem from "./FeaturesTabItem";
-import featuresTabData from "./featuresTabData";
+import getFeatureTabData from "./featuresTabData";
 import { MotionDiv } from "@/app/libs/framer-utls";
+import { useLanguage } from "@/app/context/LanguageContext";
 
 const FeaturesTab = () => {
   const [currentTab, setCurrentTab] = useState("tabOne");
+  const { t } = useLanguage();
+  
+  // Get the feature data with translations
+  const featuresTabData = getFeatureTabData(t);
 
   return (
     <>
@@ -62,7 +67,7 @@ const FeaturesTab = () => {
               </div>
               <div className="md:w-3/5 lg:w-auto">
                 <button className="text-sm font-medium text-black dark:text-white xl:text-regular">
-                  Initial Consultation
+                  {t("initialConsultation", "features")}
                 </button>
               </div>
             </div>
@@ -81,7 +86,7 @@ const FeaturesTab = () => {
               </div>
               <div className="md:w-3/5 lg:w-auto">
                 <button className="text-sm font-medium text-black dark:text-white xl:text-regular">
-                  Strategy Development
+                  {t("strategyDevelopment", "features")}
                 </button>
               </div>
             </div>
@@ -100,7 +105,7 @@ const FeaturesTab = () => {
               </div>
               <div className="md:w-3/5 lg:w-auto">
                 <button className="text-sm font-medium text-black dark:text-white xl:text-regular">
-                  Ongoing Support
+                  {t("ongoingSupport", "features")}
                 </button>
               </div>
             </div>

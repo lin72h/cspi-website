@@ -9,9 +9,9 @@ const about = {
     projectsCompleted: "Projects Completed",
     happyClients: "Happy Clients",
     teamMembers: "Team Members",
-    commitmentTitle: "Our Commitment to Excellence",
+    commitmentTitle: "Our Commitment To You",
     commitmentSubtitle: "Building Financial Clarity",
-    commitmentDescription: "At CSPI Consultants, we believe in empowering our clients through financial clarity. We work closely with small to medium businesses to develop comprehensive financial strategies that support sustainable growth and long-term success."
+    commitmentDescription: "Our service commitments to you:\n\n• Strict confidentiality of all personal and business information\n\n• Friendly, courteous and outstanding service\n\n• Clear timelines for work completion\n\n• Regular business progress updates and recommendations"
   },
   zh: {
     trustedBy: "受到信任",
