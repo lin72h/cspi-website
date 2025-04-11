@@ -17,7 +17,7 @@ const IndustrySectorsGrid = ({
         {t('industrySectorsHeader', 'features')}
       </h2>
 
-      <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
+      <div className="grid grid-cols-2 gap-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
         {sectors.map((sector, index) => {
           const { current, other } = getBilingualText(sector.titleKey, 'features');
           
@@ -40,21 +40,22 @@ const IndustrySectorsGrid = ({
               viewport={{ once: true }}
               className="animate_top flex flex-col items-center"
             >
-              <div className="mb-5 flex h-16 w-16 items-center justify-center">
+              <div className="mb-3 sm:mb-5 flex h-12 w-12 sm:h-16 sm:w-16 items-center justify-center">
                 <Image
                   src={sector.icon}
                   alt={current}
                   width={64}
                   height={64}
+                  className="w-full h-full"
                 />
               </div>
               
               <div className="text-center">
-                <p className="text-lg font-bold text-black dark:text-white">
+                <p className="text-sm sm:text-lg font-bold text-black dark:text-white">
                   {current}
                 </p>
                 {language === 'zh' && (
-                  <p className="text-sm text-body-color">
+                  <p className="text-xs sm:text-sm text-body-color">
                     {other}
                   </p>
                 )}
