@@ -25,7 +25,7 @@ const Feature = () => {
           />
           {/* <!-- Section Title End --> */}
 
-          <div className="mt-8 grid grid-cols-1 gap-6 md:grid-cols-2 lg:mt-10 xl:mt-12 xl:gap-8 max-w-4xl mx-auto">
+          <div className="mt-8 grid grid-cols-2 gap-4 md:grid-cols-2 lg:mt-10 xl:mt-12 xl:gap-8 max-w-4xl mx-auto">
             {/* <!-- Features item Start --> */}
 
             {featuresData.map((feature, key) => (

@@ -48,15 +48,15 @@ const SingleFeature = ({ feature }: { feature: Feature }) => {
           whileInView="visible"
           transition={{ duration: 0.5 }}
           viewport={{ once: true }}
-          className="animate_top z-40 rounded-lg border border-white bg-white p-6 shadow-solid-3 transition-all hover:shadow-solid-4 hover:border-cspi dark:border-strokedark dark:bg-blacksection dark:hover:bg-hoverdark xl:p-8 h-full flex flex-col cursor-pointer"
+          className="animate_top z-40 rounded-lg border border-white bg-white p-4 sm:p-6 shadow-solid-3 transition-all hover:shadow-solid-4 hover:border-cspi dark:border-strokedark dark:bg-blacksection dark:hover:bg-hoverdark xl:p-8 h-full flex flex-col cursor-pointer"
         >
-          <div className="relative flex h-16 w-16 items-center justify-center rounded-[4px] bg-primary mb-5">
-            <Image src={icon} width={36} height={36} alt={displayTitle} />
+          <div className="relative flex h-12 w-12 sm:h-16 sm:w-16 items-center justify-center rounded-[4px] bg-primary mb-3 sm:mb-5">
+            <Image src={icon} width={36} height={36} alt={displayTitle} className="w-6 h-6 sm:w-9 sm:h-9" />
           </div>
-          <h3 className="mb-3 text-xl font-semibold text-black dark:text-white xl:text-itemtitle">
+          <h3 className="mb-2 sm:mb-3 text-sm sm:text-xl font-semibold text-black dark:text-white xl:text-itemtitle">
             {displayTitle}
           </h3>
-          <p className="text-base">{displayDescription}</p>
+          <p className="text-xs sm:text-base">{displayDescription}</p>
         </MotionDiv>
       </Link>
     </>
