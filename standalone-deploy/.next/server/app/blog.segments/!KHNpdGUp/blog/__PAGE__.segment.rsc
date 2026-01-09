@@ -1,0 +1,5 @@
+1:"$Sreact.fragment"
+2:I[897367,["/_next/static/chunks/d96012bcfc98706a.js","/_next/static/chunks/963c71eec1d89c3f.js"],"OutletBoundary"]
+3:"$Sreact.suspense"
+0:{"buildId":"UECPHjEnFrzbU9NXXYyjI","rsc":["$","$1","c",{"children":[["$","section",null,{"className":"py-20 lg:py-25 xl:py-30","children":["$","div",null,{"className":"mx-auto mt-15 max-w-c-1280 px-4 md:px-8 xl:mt-20 xl:px-0","children":["$","div",null,{"className":"grid grid-cols-1 gap-7.5 md:grid-cols-2 lg:grid-cols-3 xl:gap-10","children":["$","p",null,{"children":["$","div",null,{"style":{"whiteSpace":"pre-wrap"},"children":["Sanity is not enabled. Follow the"," ",["$","a",null,{"href":"https://nextjstemplates.com/docs/enableintegration","className":"text-primary underline","target":"_blank","rel":"noopener noreferrer","children":"documentation"}]," ","to enable it."]}]}]}]}]}],[["$","script","script-0",{"src":"/_next/static/chunks/95bab8d91542c52a.js","async":true}]],["$","$L2",null,{"children":["$","$3",null,{"name":"Next.MetadataOutlet","children":"$@4"}]}]]}],"loading":null,"isPartial":false}
+4:null

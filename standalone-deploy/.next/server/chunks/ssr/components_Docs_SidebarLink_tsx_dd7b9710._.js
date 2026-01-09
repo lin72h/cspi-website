@@ -1,0 +1,3 @@
+module.exports=[490446,a=>{"use strict";var b=a.i(187924),c=a.i(238246),d=a.i(50944);a.s(["default",0,({post:a})=>{let e=(0,d.usePathname)();return(0,b.jsx)(b.Fragment,{children:(0,b.jsx)("li",{className:"block",children:(0,b.jsx)(c.default,{href:`/docs/${a?.slug}`,className:`flex w-full rounded-sm bg-stroke px-3 py-2 text-base ${e===`/docs/${a?.slug}`?"text-black dark:bg-blackho dark:text-white":"bg-white dark:bg-black  dark:text-white "}`,children:a?.title})})})}])}];
+
+//# sourceMappingURL=components_Docs_SidebarLink_tsx_dd7b9710._.js.map

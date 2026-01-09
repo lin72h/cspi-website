@@ -1,0 +1,16 @@
+{
+  "headers": {
+    "x-nextjs-stale-time": "300",
+    "x-nextjs-prerender": "1",
+    "x-next-cache-tags": "_N_T_/layout,_N_T_/(site)/layout,_N_T_/(site)/budgeting-cashflows/layout,_N_T_/(site)/budgeting-cashflows/page,_N_T_/budgeting-cashflows"
+  },
+  "segmentPaths": [
+    "/_tree",
+    "/_full",
+    "/!KHNpdGUp/budgeting-cashflows/__PAGE__",
+    "/!KHNpdGUp/budgeting-cashflows",
+    "/!KHNpdGUp",
+    "/_index",
+    "/_head"
+  ]
+}

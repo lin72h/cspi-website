@@ -1,0 +1,16 @@
+{
+  "headers": {
+    "x-nextjs-stale-time": "300",
+    "x-nextjs-prerender": "1",
+    "x-next-cache-tags": "_N_T_/layout,_N_T_/(site)/layout,_N_T_/(site)/consulting-services/layout,_N_T_/(site)/consulting-services/page,_N_T_/consulting-services"
+  },
+  "segmentPaths": [
+    "/_tree",
+    "/_full",
+    "/!KHNpdGUp/consulting-services/__PAGE__",
+    "/!KHNpdGUp/consulting-services",
+    "/!KHNpdGUp",
+    "/_index",
+    "/_head"
+  ]
+}

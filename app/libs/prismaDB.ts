@@ -1,17 +1,24 @@
-import { PrismaClient } from "@prisma/client";
+// Prisma is disabled for FreeBSD deployment
+// This is a mock that prevents the PrismaClient from being imported
 
-// PrismaClient is attached to the `global` object in development to prevent
-// exhausting your database connection limit.
-//
-// Learn more:
-// https://pris.ly/d/help/next-js-best-practices
-
-const globalForPrisma = global as unknown as { prisma: PrismaClient };
-
-export const prisma =
-  globalForPrisma.prisma ||
-  new PrismaClient({
-    log: ["query"],
-  });
-
-if (process.env.NODE_ENV !== "production") globalForPrisma.prisma = prisma;
+export const prisma = {
+  user: {
+    findUnique: async () => null,
+    create: async () => null,
+    update: async () => null,
+  },
+  account: {
+    findUnique: async () => null,
+    create: async () => null,
+  },
+  session: {
+    findUnique: async () => null,
+    create: async () => null,
+    delete: async () => null,
+  },
+  verificationToken: {
+    findUnique: async () => null,
+    create: async () => null,
+    delete: async () => null,
+  },
+} as any;

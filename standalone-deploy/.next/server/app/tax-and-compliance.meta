@@ -1,0 +1,16 @@
+{
+  "headers": {
+    "x-nextjs-stale-time": "300",
+    "x-nextjs-prerender": "1",
+    "x-next-cache-tags": "_N_T_/layout,_N_T_/(site)/layout,_N_T_/(site)/tax-and-compliance/layout,_N_T_/(site)/tax-and-compliance/page,_N_T_/tax-and-compliance"
+  },
+  "segmentPaths": [
+    "/_tree",
+    "/_full",
+    "/!KHNpdGUp/tax-and-compliance/__PAGE__",
+    "/!KHNpdGUp/tax-and-compliance",
+    "/!KHNpdGUp",
+    "/_index",
+    "/_head"
+  ]
+}
